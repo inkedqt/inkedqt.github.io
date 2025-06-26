@@ -45,7 +45,7 @@ a:hover {
 table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: auto;
+  table-layout: fixed;
   background-color: #1e1e1e;
   color: #f4c4eb;
   margin-bottom: 2rem;
@@ -76,19 +76,51 @@ tr:hover {
   background-color: #2a003f;
 }
 
-/* === Column Layout - Clean and Responsive === */
-th:nth-child(1), td:nth-child(1) { width: 10%; min-width: 90px; }
-th:nth-child(2), td:nth-child(2) { width: 10%; min-width: 80px; }
-th:nth-child(3), td:nth-child(3) { width: 10%; min-width: 80px; }
-th:nth-child(4), td:nth-child(4) { width: 15%; min-width: 100px; }
-th:nth-child(5), td:nth-child(5),
-th:nth-child(6), td:nth-child(6) {
-  width: auto;
-  white-space: normal;
-  word-break: break-word;
+/* === Column Layout - Precise and Readable === */
+th:nth-child(1), td:nth-child(1) {
+  width: 12%;
+  min-width: 100px;
+}
+
+th:nth-child(2), td:nth-child(2) {
+  width: 12%;
+  min-width: 80px;
+}
+
+th:nth-child(3), td:nth-child(3) {
+  width: 12%;
+  min-width: 80px;
+}
+
+th:nth-child(4), td:nth-child(4) {
+  width: 15%;
+  min-width: 100px;
+  text-align: center;
+}
+
+/* Column 5: Writeup */
+th:nth-child(5), td:nth-child(5) {
+  width: 12%;
+  min-width: 100px;
   text-align: left;
   vertical-align: top;
-  max-width: 300px;
+  white-space: nowrap;
+}
+
+/* Column 6: Summary */
+th:nth-child(6), td:nth-child(6) {
+  width: 37%;
+  min-width: 200px;
+  max-width: 400px;
+  text-align: left;
+  vertical-align: top;
+  white-space: normal;
+  word-break: break-word;
+}
+/* === Bonus Fix: Horizontal View Links === */
+td:nth-child(5) a {
+  writing-mode: horizontal-tb;
+  display: inline-block;
 }
 
 /* === PROOF THUMBNAILS === */
