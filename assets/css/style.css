@@ -1,4 +1,4 @@
-/* === BASE COLORS & BACKGROUND === */
+/* === BASE COLORS & BACKGROUND === */ 
 body {
   background-color: #121212;
   color: #f4c4eb;
@@ -45,7 +45,7 @@ a:hover {
 table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: auto; /* ✅ Flex columns naturally */
+  table-layout: auto;
   background-color: #1e1e1e;
   color: #f4c4eb;
   margin-bottom: 2rem;
@@ -77,23 +77,24 @@ tr:hover {
   background-color: #2a003f;
 }
 
-/* Column-specific control */
+/* === Column Layout === */
 th:nth-child(1), td:nth-child(1) { width: 12%; min-width: 100px; }
 th:nth-child(2), td:nth-child(2) { width: 12%; min-width: 80px; }
 th:nth-child(3), td:nth-child(3) { width: 12%; min-width: 80px; }
-th:nth-child(4), td:nth-child(4) { width: 15%; }  /* Proof */
-th:nth-child(5), td:nth-child(5) { width: 10%; }  /* Writeup */
-th:nth-child(6), td:nth-child(6) { width: 45%; }  /* Summary */
+th:nth-child(4), td:nth-child(4) { width: 15%; }
+th:nth-child(5), td:nth-child(5) { width: 10%; }
+th:nth-child(6), td:nth-child(6) { width: 45%; }
 
 td:nth-child(5), th:nth-child(5),
 td:nth-child(6), th:nth-child(6) {
-  white-space: normal;
+  white-space: normal !important;
   word-break: break-word;
   text-align: left;
   vertical-align: top;
+  max-width: 200px;
 }
 
-/* === PROOF THUMBNAILS === */
+/* === PROOF THUMBNAILS WITH HOVER ZOOM === */
 td:nth-child(4) img {
   max-width: 80px;
   height: auto;
@@ -101,6 +102,15 @@ td:nth-child(4) img {
   display: block;
   margin: auto;
   box-shadow: 0 0 6px #e754d2;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: zoom-in;
+  z-index: 1;
+}
+td:nth-child(4) img:hover {
+  transform: scale(4);
+  z-index: 100;
+  position: relative;
+  box-shadow: 0 0 18px #ff66c4;
 }
 
 /* === FOOTER === */
@@ -121,35 +131,4 @@ footer {
   td:nth-child(4) img {
     max-width: 100px;
   }
-}
-/* === HOVER ZOOM FOR PROOF IMAGES === */
-td:nth-child(4) img {
-  max-width: 80px;
-  height: auto;
-  border-radius: 0.5rem;
-  display: block;
-  margin: auto;
-  box-shadow: 0 0 6px #e754d2;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  cursor: zoom-in;
-  z-index: 1;
-}
-
-td:nth-child(4) img:hover {
-  transform: scale(4);
-  z-index: 100;
-  position: relative;
-  box-shadow: 0 0 18px #ff66c4;
-}
-th:nth-child(1), td:nth-child(1) { 
-  width: 10%; 
-  min-width: 80px;
-}
-th:nth-child(2), td:nth-child(2) { 
-  width: 10%; 
-  min-width: 80px;
-}
-th:nth-child(3), td:nth-child(3) { 
-  width: 10%; 
-  min-width: 80px;
 }
