@@ -82,6 +82,9 @@ table tr:nth-child(odd) {
 tr:hover {
   background-color: #2a003f;
 }
+table {
+  table-layout: auto; /* already set, good! */
+}
 
 /* === IMAGES === */
 img {
@@ -106,7 +109,9 @@ footer {
   color: #888;
   font-size: 0.9rem;
 }
-
+td:nth-child(4), th:nth-child(4) {
+  min-width: 140px;
+}
 /* === RESPONSIVE SCALING FOR 4K === */
 @media (min-width: 2560px) {
   body {
@@ -115,4 +120,15 @@ footer {
   table img {
     max-width: 160px;
   }
+}
+td:nth-child(4) img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+td:nth-child(6), th:nth-child(6) {
+  white-space: normal;
+  word-break: break-word;
+  max-width: 320px;
 }
