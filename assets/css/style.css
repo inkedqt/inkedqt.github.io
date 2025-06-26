@@ -160,3 +160,17 @@ a {
 a:hover {
   color: #ffb3ff !important;
 }
+body {
+  font-size: clamp(1rem, 1.2vw, 1.5rem); /* scales between 16px–24px depending on screen */
+}
+
+table {
+  width: 100%;
+  table-layout: auto;
+  font-size: clamp(0.85rem, 1vw, 1.2rem);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
