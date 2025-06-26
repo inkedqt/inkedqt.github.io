@@ -81,3 +81,40 @@ footer {
 .highlight {
   color: #ff7edb;
 }
+/* Override Minima theme light backgrounds */
+body {
+  background-color: #121212 !important;
+  color: #f4c4eb !important;
+}
+
+/* General containers */
+div, section, article {
+  background-color: transparent !important;
+  color: #f4c4eb !important;
+}
+
+/* Tables */
+table, th, td {
+  background-color: #1e1e1e !important;
+  border: 1px solid #444 !important;
+  color: #f4c4eb !important;
+}
+
+/* Headers */
+h1, h2, h3, h4 {
+  color: #ff80bf !important;
+}
+
+/* Links */
+a {
+  color: #ff9ce4 !important;
+}
+a:hover {
+  color: #ffb3ff !important;
+}
+
+/* Proof images */
+img {
+  border: none;
+  box-shadow: 0 0 8px #ff7edb;
+}
