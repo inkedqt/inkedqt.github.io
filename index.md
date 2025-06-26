@@ -14,8 +14,8 @@ description: "A showcase of Hack The Box writeups and offensive security journey
   <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/tate-banner.png" alt="Tate hacking banner" class="hero-banner" />
   <div class="hero-text">
     <h1>Hi, I'm <span class="highlighted">Tate Pannam</span> 👋</h1>
-    <p>💻 Cyber security student | CTF enthusiast | Tattooed sysop in training<br />
-    🧠 Retired HTB boxes | 🛠️ Exploits | 🚩 Root flags | 🔐 PrivEsc wizardry</p>
+    <p>💻 Cyber security student | CTF enthusiast | Tattooed red team in training<br />
+    🧠 Retired/Active/Seasonal HTB boxes | 🛠️ Exploits | 🚩 Root flags | 🔐 PrivEsc wizardry</p>
   </div>
 </div>
 
