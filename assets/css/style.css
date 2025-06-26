@@ -51,12 +51,33 @@ table {
   margin-bottom: 2rem;
 }
 
+/* Applies to both */
 th, td {
   border: 1px solid #444;
   padding: 1rem;
   text-align: center;
   vertical-align: middle;
+}
+
+/* Only restrict wrap on narrow headers/cells */
+th:nth-child(1),
+th:nth-child(2),
+th:nth-child(3),
+th:nth-child(5),
+td:nth-child(1),
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(5) {
   white-space: nowrap;
+}
+
+/* Allow Summary and Proof to wrap */
+th:nth-child(6),
+td:nth-child(6),
+th:nth-child(4),
+td:nth-child(4) {
+  white-space: normal;
+  word-break: break-word;
 }
 
 td:nth-child(6), th:nth-child(6) {
@@ -64,9 +85,7 @@ td:nth-child(6), th:nth-child(6) {
   word-break: break-word;
   max-width: 250px;
 }
-th {
-  white-space: nowrap;  /* Prevent column headers from wrapping vertically */
-}
+
 
 table th {
   background-color: #1c1c1c;
@@ -131,4 +150,24 @@ td:nth-child(6), th:nth-child(6) {
   white-space: normal;
   word-break: break-word;
   max-width: 320px;
+}
+/* Define widths for key table columns */
+th:nth-child(1), td:nth-child(1) { width: 10%; }  /* Machine */
+th:nth-child(2), td:nth-child(2) { width: 10%; }  /* Difficulty */
+th:nth-child(3), td:nth-child(3) { width: 10%; }  /* Status */
+th:nth-child(4), td:nth-child(4) { width: 20%; }  /* Proof */
+th:nth-child(5), td:nth-child(5) { width: 10%; }  /* Writeup */
+th:nth-child(6), td:nth-child(6) { width: 40%; }  /* Summary */
+td:nth-child(5), th:nth-child(5),
+td:nth-child(6), th:nth-child(6) {
+  white-space: normal;
+  word-break: break-word;
+  text-align: left;
+  vertical-align: top;
+}
+td:nth-child(4) img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
 }
