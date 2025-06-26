@@ -82,21 +82,27 @@ tr:hover {
 }
 
 /* === Column Layout === */
-th:nth-child(1), td:nth-child(1) { width: 12%; min-width: 100px; }
-th:nth-child(2), td:nth-child(2) { width: 12%; min-width: 80px; }
-th:nth-child(3), td:nth-child(3) { width: 12%; min-width: 80px; }
-th:nth-child(4), td:nth-child(4) { width: 15%; }
-th:nth-child(5), td:nth-child(5) { width: 10%; }
-th:nth-child(6), td:nth-child(6) { width: 45%; }
-
-td:nth-child(5), th:nth-child(5),
-td:nth-child(6), th:nth-child(6) {
-  white-space: normal !important;
+th:nth-child(1), td:nth-child(1) { width: 12%; min-width: 100px; } /* Machine */
+th:nth-child(2), td:nth-child(2) { width: 12%; min-width: 80px; }  /* Difficulty */
+th:nth-child(3), td:nth-child(3) { width: 12%; min-width: 80px; }  /* Status */
+th:nth-child(4), td:nth-child(4) { width: 15%; }                   /* Proof */
+th:nth-child(5), td:nth-child(5) { 
+  width: 10%; 
+  white-space: normal;
   word-break: break-word;
   text-align: left;
   vertical-align: top;
   max-width: 200px;
 }
+th:nth-child(6), td:nth-child(6) { 
+  width: 39%;
+  white-space: normal;
+  word-break: break-word;
+  text-align: left;
+  vertical-align: top;
+  max-width: 600px;
+}
+
 
 /* === PROOF THUMBNAILS WITH HOVER ZOOM === */
 td:nth-child(4) img {
