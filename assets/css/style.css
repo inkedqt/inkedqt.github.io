@@ -44,8 +44,8 @@ a:hover {
 /* === TABLES === */
 table {
   width: 100%;
-  table-layout: fixed;
   border-collapse: collapse;
+  table-layout: auto; /* auto allows columns to expand naturally */
   background-color: #1e1e1e;
   color: #f4c4eb;
   margin-bottom: 2rem;
@@ -63,6 +63,9 @@ td:nth-child(6), th:nth-child(6) {
   white-space: normal;
   word-break: break-word;
   max-width: 250px;
+}
+th {
+  white-space: nowrap;  /* Prevent column headers from wrapping vertically */
 }
 
 table th {
