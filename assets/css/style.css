@@ -132,11 +132,24 @@ td:nth-child(4) img {
   box-shadow: 0 0 6px #e754d2;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   cursor: zoom-in;
+  z-index: 1;
 }
 
 td:nth-child(4) img:hover {
-  transform: scale(2.2);
-  z-index: 10;
+  transform: scale(4);
+  z-index: 100;
   position: relative;
-  box-shadow: 0 0 14px #ff66c4;
+  box-shadow: 0 0 18px #ff66c4;
+}
+th:nth-child(1), td:nth-child(1) { 
+  width: 10%; 
+  min-width: 80px;
+}
+th:nth-child(2), td:nth-child(2) { 
+  width: 10%; 
+  min-width: 80px;
+}
+th:nth-child(3), td:nth-child(3) { 
+  width: 10%; 
+  min-width: 80px;
 }
