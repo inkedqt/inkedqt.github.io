@@ -56,8 +56,9 @@ th, td {
   padding: 1rem;
   text-align: center;
   vertical-align: middle;
-  white-space: nowrap;
+  white-space: normal;
 }
+
 
 /* Header styles */
 table th {
@@ -81,24 +82,19 @@ th:nth-child(1), td:nth-child(1) {
   width: 12%;
   min-width: 100px;
 }
-
 th:nth-child(2), td:nth-child(2) {
   width: 12%;
   min-width: 80px;
 }
-
 th:nth-child(3), td:nth-child(3) {
   width: 12%;
   min-width: 80px;
 }
-
 th:nth-child(4), td:nth-child(4) {
   width: 15%;
   min-width: 100px;
   text-align: center;
 }
-
-/* Column 5: Writeup */
 th:nth-child(5), td:nth-child(5) {
   width: 12%;
   min-width: 100px;
@@ -106,15 +102,12 @@ th:nth-child(5), td:nth-child(5) {
   vertical-align: top;
   white-space: nowrap;
 }
-
-/* Column 6: Summary */
 th:nth-child(6), td:nth-child(6) {
   width: 37%;
   min-width: 200px;
   max-width: 400px;
   text-align: left;
   vertical-align: top;
-  white-space: normal;
   word-break: break-word;
 }
 /* === Bonus Fix: Horizontal View Links === */
