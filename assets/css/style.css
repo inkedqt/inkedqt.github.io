@@ -118,3 +118,45 @@ img {
   border: none;
   box-shadow: 0 0 8px #ff7edb;
 }
+/* Fix white title banner */
+.portfolio h1.highlight {
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 0 20px 0;
+  color: #ff80bf !important;
+}
+
+/* Fix white table headers */
+table th {
+  background-color: #1c1c1c !important;
+  color: #f4c4eb !important;
+}
+
+/* Fix alternating table rows */
+table tr:nth-child(even) {
+  background-color: #1a1a1a !important;
+}
+table tr:nth-child(odd) {
+  background-color: #121212 !important;
+}
+
+/* Fix cell text and proof column color */
+td {
+  color: #f4c4eb !important;
+  vertical-align: top;
+}
+
+/* Keep dark proof thumbnails with subtle border */
+img {
+  background-color: #222 !important;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #ff7edb;
+}
+
+/* Fix 'View' links */
+a {
+  color: #ff9ce4 !important;
+}
+a:hover {
+  color: #ffb3ff !important;
+}
