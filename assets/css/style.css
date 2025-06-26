@@ -26,12 +26,12 @@ a:hover {
 
 /* === CONTAINERS === */
 .container {
-  max-width: 1440px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 .portfolio {
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 .section-title {
   margin-top: 2rem;
@@ -59,7 +59,6 @@ th, td {
   white-space: normal;
 }
 
-
 /* Header styles */
 table th {
   background-color: #1c1c1c;
@@ -77,28 +76,10 @@ tr:hover {
   background-color: #2a003f;
 }
 
-/* === Column Layout - Final Fix === */
-th, td {
-  border: 1px solid #444;
-  padding: 0.75rem 1rem;
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
-  overflow-wrap: break-word;
-}
-
-th:nth-child(1), td:nth-child(1) {
-  width: 14%;
-  min-width: 120px;
-}
-th:nth-child(2), td:nth-child(2) {
-  width: 12%;
-  min-width: 100px;
-}
-th:nth-child(3), td:nth-child(3) {
-  width: 12%;
-  min-width: 100px;
-}
+/* === Column Layout - Full Width and Clean === */
+th:nth-child(1), td:nth-child(1) { width: 14%; min-width: 120px; }
+th:nth-child(2), td:nth-child(2) { width: 10%; min-width: 100px; }
+th:nth-child(3), td:nth-child(3) { width: 10%; min-width: 100px; }
 th:nth-child(4), td:nth-child(4) {
   width: 14%;
   min-width: 120px;
@@ -107,19 +88,21 @@ th:nth-child(4), td:nth-child(4) {
 th:nth-child(5), td:nth-child(5) {
   width: 12%;
   min-width: 100px;
-  text-align: center;
-}
-th:nth-child(6), td:nth-child(6) {
-  width: 36%;
-  min-width: 250px;
-  max-width: 700px;
   text-align: left;
   vertical-align: top;
-  white-space: normal;
+  white-space: nowrap;
+}
+th:nth-child(6), td:nth-child(6) {
+  width: 40%;
+  min-width: 250px;
+  max-width: 600px;
+  text-align: left;
+  vertical-align: top;
   word-break: break-word;
+  white-space: normal;
 }
 
-/* === Bonus Fix: Horizontal View Links === */
+/* Bonus: View link horizontal fix */
 td:nth-child(5) a {
   writing-mode: horizontal-tb;
   display: inline-block;
@@ -127,7 +110,7 @@ td:nth-child(5) a {
 
 /* === PROOF THUMBNAILS === */
 td:nth-child(4) img {
-  max-width: 100px;
+  max-width: 80px;
   height: auto;
   border-radius: 0.5rem;
   display: block;
@@ -137,12 +120,51 @@ td:nth-child(4) img {
   cursor: zoom-in;
   z-index: 1;
 }
-
 td:nth-child(4) img:hover {
   transform: scale(4);
   z-index: 100;
   position: relative;
   box-shadow: 0 0 18px #ff66c4;
+}
+
+/* === HERO BANNER === */
+.hero-banner {
+  background-color: #1a1a1a;
+  border: 2px solid #ff66c4;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 960px;
+  box-shadow: 0 0 20px #ff66c4;
+  text-align: center;
+  color: #f4c4eb;
+}
+.hero-banner img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0 12px #ff66c4;
+  margin-bottom: 1.5rem;
+}
+.hero-banner h2 {
+  color: #ff90d6;
+  margin-bottom: 0.5rem;
+}
+.hero-banner p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.hero-banner .hero-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.95rem;
+  color: #ffb3ff;
+}
+.hero-banner .hero-icons span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* === FOOTER === */
@@ -162,48 +184,4 @@ footer {
   td:nth-child(4) img {
     max-width: 100px;
   }
-}
-/* === HERO BANNER === */
-.hero-banner {
-  background-color: #1a1a1a;
-  border: 2px solid #ff66c4;
-  border-radius: 16px;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 768px;
-  box-shadow: 0 0 20px #ff66c4;
-  text-align: center;
-  color: #f4c4eb;
-}
-
-.hero-banner img {
-  width: 100%;
-  border-radius: 1rem;
-  box-shadow: 0 0 12px #ff66c4;
-  margin-bottom: 1.5rem;
-}
-
-.hero-banner h2 {
-  color: #ff90d6;
-  margin-bottom: 0.5rem;
-}
-
-.hero-banner p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.hero-banner .hero-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  font-size: 0.95rem;
-  color: #ffb3ff;
-}
-
-.hero-banner .hero-icons span {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
 }
