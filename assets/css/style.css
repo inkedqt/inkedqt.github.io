@@ -45,21 +45,20 @@ a:hover {
 table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: auto; /* auto allows columns to expand naturally */
+  table-layout: auto;
   background-color: #1e1e1e;
   color: #f4c4eb;
   margin-bottom: 2rem;
 }
 
-/* Applies to both */
 th, td {
   border: 1px solid #444;
   padding: 1rem;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
-/* Only restrict wrap on narrow headers/cells */
+/* Prevent wrap on short headers */
 th:nth-child(1),
 th:nth-child(2),
 th:nth-child(3),
@@ -71,27 +70,32 @@ td:nth-child(5) {
   white-space: nowrap;
 }
 
-/* Allow Summary and Proof to wrap */
+/* Allow wrap for summary & proof */
+th:nth-child(4),
+td:nth-child(4),
 th:nth-child(6),
 td:nth-child(6),
-th:nth-child(4),
-td:nth-child(4) {
+th:nth-child(5),
+td:nth-child(5) {
   white-space: normal;
   word-break: break-word;
+  text-align: left;
+  vertical-align: top;
 }
 
-td:nth-child(6), th:nth-child(6) {
-  white-space: normal;
-  word-break: break-word;
-  max-width: 250px;
-}
+/* Column widths */
+th:nth-child(1), td:nth-child(1) { width: 10%; }  /* Machine */
+th:nth-child(2), td:nth-child(2) { width: 10%; }  /* Difficulty */
+th:nth-child(3), td:nth-child(3) { width: 10%; }  /* Status */
+th:nth-child(4), td:nth-child(4) { width: 20%; }  /* Proof */
+th:nth-child(5), td:nth-child(5) { width: 10%; }  /* Writeup */
+th:nth-child(6), td:nth-child(6) { width: 40%; }  /* Summary */
 
-
+/* === ROW STYLES === */
 table th {
   background-color: #1c1c1c;
   color: #f4c4eb;
 }
-
 table tr:nth-child(even) {
   background-color: #1a1a1a;
 }
@@ -100,9 +104,6 @@ table tr:nth-child(odd) {
 }
 tr:hover {
   background-color: #2a003f;
-}
-table {
-  table-layout: auto; /* already set, good! */
 }
 
 /* === IMAGES === */
@@ -114,8 +115,12 @@ img {
   box-shadow: 0 0 8px #ff7edb;
 }
 
-table img {
-  max-width: 120px;
+/* Proof images - scaled down */
+td:nth-child(4) img {
+  max-width: 100%;
+  max-height: 200px;
+  display: block;
+  margin: auto;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px #e754d2;
 }
@@ -128,46 +133,14 @@ footer {
   color: #888;
   font-size: 0.9rem;
 }
-td:nth-child(4), th:nth-child(4) {
-  min-width: 140px;
-}
-/* === RESPONSIVE SCALING FOR 4K === */
+
+/* === 4K Responsive Scaling === */
 @media (min-width: 2560px) {
   body {
     font-size: 18px;
   }
-  table img {
-    max-width: 160px;
+
+  td:nth-child(4) img {
+    max-height: 280px;
   }
-}
-td:nth-child(4) img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
-}
-td:nth-child(6), th:nth-child(6) {
-  white-space: normal;
-  word-break: break-word;
-  max-width: 320px;
-}
-/* Define widths for key table columns */
-th:nth-child(1), td:nth-child(1) { width: 10%; }  /* Machine */
-th:nth-child(2), td:nth-child(2) { width: 10%; }  /* Difficulty */
-th:nth-child(3), td:nth-child(3) { width: 10%; }  /* Status */
-th:nth-child(4), td:nth-child(4) { width: 20%; }  /* Proof */
-th:nth-child(5), td:nth-child(5) { width: 10%; }  /* Writeup */
-th:nth-child(6), td:nth-child(6) { width: 40%; }  /* Summary */
-td:nth-child(5), th:nth-child(5),
-td:nth-child(6), th:nth-child(6) {
-  white-space: normal;
-  word-break: break-word;
-  text-align: left;
-  vertical-align: top;
-}
-td:nth-child(4) img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
 }
