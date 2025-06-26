@@ -1,74 +1,101 @@
-/* Pink & Purple Dark Theme for inkedqt.github.io */
-
+/* === BASE COLORS & BACKGROUND === */
 body {
   background-color: #121212;
   color: #f4c4eb;
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
 }
 
+/* === HEADINGS === */
 h1, h2, h3, h4, h5, h6 {
   color: #ff90d6;
   margin-bottom: 0.5rem;
 }
 
+/* === LINKS === */
 a {
-  color: #c288ff;
+  color: #ff9ce4;
   text-decoration: none;
 }
-
 a:hover {
-  color: #ff7edb;
+  color: #ffb3ff;
   text-decoration: underline;
 }
 
-.portfolio {
-  max-width: 960px;
-  margin: auto;
+/* === CONTAINERS === */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 2rem;
 }
-
+.portfolio {
+  padding: 2rem;
+}
 .section-title {
   margin-top: 2rem;
   color: #f4c4eb;
 }
-
-.private-note {
-  font-style: italic;
-  color: #888;
+.highlight {
+  color: #ff7edb;
 }
 
-/* Table styles */
+/* === TABLES === */
 table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
-  background-color: #1e1e1e !important;
-  color: #f4c4eb !important;
-  border: 1px solid #444 !important;
+  background-color: #1e1e1e;
+  color: #f4c4eb;
   margin-bottom: 2rem;
 }
 
 th, td {
   border: 1px solid #444;
-  padding: 0.75rem;
-  text-align: left;
+  padding: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
-th {
-  background-color: #2a003f;
-  color: #290426;
+td:nth-child(6), th:nth-child(6) {
+  white-space: normal;
+  word-break: break-word;
+  max-width: 250px;
 }
 
-tr:nth-child(even) {
+table th {
+  background-color: #1c1c1c;
+  color: #f4c4eb;
+}
+
+table tr:nth-child(even) {
   background-color: #1a1a1a;
 }
-
+table tr:nth-child(odd) {
+  background-color: #121212;
+}
 tr:hover {
   background-color: #2a003f;
 }
 
-/* Footer */
+/* === IMAGES === */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  background-color: #222;
+  box-shadow: 0 0 8px #ff7edb;
+}
+
+table img {
+  max-width: 120px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px #e754d2;
+}
+
+/* === FOOTER === */
 footer {
   margin-top: 3rem;
   padding-top: 1rem;
@@ -77,134 +104,11 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Highlight headline */
-.highlight {
-  color: #ff7edb;
-}
-/* Override Minima theme light backgrounds */
-body {
-  background-color: #121212 !important;
-  color: #f4c4eb !important;
-}
-
-/* General containers */
-div, section, article {
-  background-color: transparent !important;
-  color: #f4c4eb !important;
-}
-
-/* Tables */
-table, th, td {
-  background-color: #1e1e1e !important;
-  border: 1px solid #444 !important;
-  color: #f4c4eb !important;
-}
-
-/* Headers */
-h1, h2, h3, h4 {
-  color: #ff80bf !important;
-}
-
-/* Links */
-a {
-  color: #ff9ce4 !important;
-}
-a:hover {
-  color: #ffb3ff !important;
-}
-
-/* Proof images */
-img {
-  border: none;
-  box-shadow: 0 0 8px #ff7edb;
-}
-/* Fix white title banner */
-.portfolio h1.highlight {
-  background-color: transparent !important;
-  padding: 0 !important;
-  margin: 0 0 20px 0;
-  color: #ff80bf !important;
-}
-
-/* Fix white table headers */
-table th {
-  background-color: #1c1c1c !important;
-  color: #f4c4eb !important;
-}
-
-/* Fix alternating table rows */
-table tr:nth-child(even) {
-  background-color: #1a1a1a !important;
-}
-table tr:nth-child(odd) {
-  background-color: #121212 !important;
-}
-
-/* Fix cell text and proof column color */
-td {
-  color: #f4c4eb !important;
-  vertical-align: top;
-}
-
-/* Keep dark proof thumbnails with subtle border */
-img {
-  background-color: #222 !important;
-  border-radius: 4px;
-  box-shadow: 0 0 4px #ff7edb;
-}
-
-/* Fix 'View' links */
-a {
-  color: #ff9ce4 !important;
-}
-a:hover {
-  color: #ffb3ff !important;
-}
-body {
-  font-size: clamp(1rem, 1.2vw, 1.5rem); /* scales between 16px–24px depending on screen */
-}
-
-table {
-  width: 100%;
-  table-layout: auto;
-  font-size: clamp(0.85rem, 1vw, 1.2rem);
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-}
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-table {
-  width: 100%;
-  table-layout: auto;
-  border-collapse: collapse;
-  margin-bottom: 2rem;
-}
-
-td, th {
-  padding: 1rem;
-  vertical-align: top;
-  text-align: left;
-  word-break: break-word;
-}
-
-/* Optional: limit proof image width while keeping scale */
-table img {
-  max-width: 120px;
-  height: auto;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px #e754d2;
-}
+/* === RESPONSIVE SCALING FOR 4K === */
 @media (min-width: 2560px) {
   body {
     font-size: 18px;
   }
-
   table img {
     max-width: 160px;
   }
