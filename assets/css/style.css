@@ -179,3 +179,33 @@ img {
   margin: 0 auto;
   padding: 2rem;
 }
+table {
+  width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+td, th {
+  padding: 1rem;
+  vertical-align: top;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* Optional: limit proof image width while keeping scale */
+table img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px #e754d2;
+}
+@media (min-width: 2560px) {
+  body {
+    font-size: 18px;
+  }
+
+  table img {
+    max-width: 160px;
+  }
+}
