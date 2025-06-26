@@ -1,0 +1,91 @@
+/* Pink & Purple Dark Theme for inkedqt.github.io */
+
+body {
+  background-color: #121212;
+  color: #E0E0E0;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #ff79c6;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #bd93f9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code, pre {
+  background-color: #2e2e2e;
+  color: #ffb86c;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+footer {
+  color: #999;
+  font-size: 0.9em;
+  padding: 1em;
+  text-align: center;
+}
+
+.portfolio {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.highlight {
+  color: #ff79c6;
+}
+
+.section-title {
+  border-bottom: 2px solid #bd93f9;
+  padding-bottom: 0.3em;
+  margin-top: 2em;
+}
+
+.private-note {
+  font-style: italic;
+  color: #888;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+thead {
+  background-color: #1e1e1e;
+  color: #ffb6f2;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 0.75em;
+  text-align: left;
+}
+
+img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px #bd93f9;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 1em;
+  }
+  table {
+    font-size: 0.9em;
+  }
+}
