@@ -43,9 +43,9 @@ a:hover {
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #1e1e1e;
-  color: #f4c4eb;
-  border: 1px solid #444;
+  background-color: #1e1e1e !important;
+  color: #f4c4eb !important;
+  border: 1px solid #444 !important;
   margin-bottom: 2rem;
 }
 
@@ -57,7 +57,7 @@ th, td {
 
 th {
   background-color: #2a003f;
-  color: #ffffff;
+  color: #290426;
 }
 
 tr:nth-child(even) {
