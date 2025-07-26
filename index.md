@@ -33,6 +33,13 @@ description: "A showcase of Hack The Box writeups and offensive security journey
     <h3>CPTS – Certified Penetration Testing Specialist</h3>
     <p><em>Pending verification…</em></p>
   </div>
+  <!-- Cert IV Cyber Security -->
+  <div class="cert-card">
+    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/vu-cyber.png" alt="Victoria University Cyber Security" class="cert-img" />
+    <h3>Cert IV – Cyber Security</h3>
+    <p>Victoria University, Australia<br /><em>TAFE Accredited</em></p>
+    <p><em>Currently completing</em></p>
+  </div>
 </div>
 </div>
 
