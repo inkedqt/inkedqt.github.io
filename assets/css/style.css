@@ -193,7 +193,7 @@ footer {
 /* === CERTIFICATIONS GRID === */
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  grid-template-columns: repeat(4, 1fr); /* Updated to four columns */
   gap: 2rem;
   justify-items: center;
   margin: 2rem 0;
