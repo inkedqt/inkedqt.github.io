@@ -46,13 +46,13 @@ a:hover {
 
 /* === TABLES === */
 table {
-  width: 100%; /* Ensures table takes full width of container */
+  width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
   background-color: #1e1e1e;
   color: #f4c4eb;
   margin-bottom: 2rem;
-  max-width: 960px; /* Matches hero-banner max-width */
+  max-width: 960px;
 }
 
 th, td {
@@ -189,27 +189,34 @@ footer {
     max-width: 100px;
   }
 }
-/* === cert image resize === */
+
+/* === CERTIFICATIONS GRID === */
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
   gap: 2rem;
   justify-items: center;
   margin: 2rem 0;
+  max-width: 960px;
+  width: 100%;
 }
+
 .cert-card {
   background-color: #1a1a1a;
   border: 2px solid #ff66c4;
   border-radius: 1rem;
   padding: 1rem;
-  max-width: 280px;
   text-align: center;
   box-shadow: 0 0 16px #ff66c4;
   transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
 }
+
 .cert-card:hover {
   transform: scale(1.05);
 }
+
 .cert-img {
   width: 100%;
   max-height: 180px;
