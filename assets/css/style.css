@@ -190,11 +190,33 @@ footer {
   }
 }
 /* === cert image resize === */
+.cert-grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cert-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 0 10px #ff66c4;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cert-card:hover {
+  transform: scale(1.02);
+}
+
 .cert-img {
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
   border-radius: 0.5rem;
-  box-shadow: 0 0 8px #ff66c4;
-  display: block;
-  margin: 1rem auto;
+  box-shadow: 0 0 6px #ff66c4;
+  margin-bottom: 1rem;
 }
