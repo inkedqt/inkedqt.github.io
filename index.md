@@ -21,7 +21,7 @@ description: "A showcase of Hack The Box writeups and offensive security journey
 <h2 class="section-title">📜 Certifications</h2>
 <div class="cert-grid">
   <a href="https://certs.ine.com/418db589-3ab5-4b4e-9a3c-236681afa28a#acc.9iOk41zd" target="_blank" class="cert-card">
-    <img src="https://images.credly.com/size/680x680/images/00c7d31f-9f8f-466a-9f32-50c7a3b81703/image.png" alt="INE eJPT Certification Badge" class="cert-img"/>
+    <img src="/assets/certs/ejpt.png" alt="INE eJPT Certification Badge" class="cert-img"/>
     <div class="cert-info">
       <h3>eJPT – Junior Penetration Tester</h3>
       <p>Issued by INE | Verified Credential</p>
