@@ -17,16 +17,22 @@ description: "A showcase of Hack The Box writeups and offensive security journey
     <p>💻 Cyber security student | CTF enthusiast | Tattooed red team in training<br />
     🧠 Retired/Active/Seasonal HTB boxes | 🛠️ Exploits | 🚩 Root flags | 🔐 PrivEsc wizardry</p>
   </div>
-  <!-- Certifications -->
+<!-- Certifications -->
 <h2 class="section-title">📜 Certifications</h2>
-<div class="cert-grid">
-  <a href="https://certs.ine.com/418db589-3ab5-4b4e-9a3c-236681afa28a#acc.9iOk41zd" target="_blank" class="cert-card">
-    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/ejpt.png" alt="INE eJPT Certification Badge" class="cert-img"/>
-    <div class="cert-info">
-      <h3>eJPT – Junior Penetration Tester</h3>
-      <p>Issued by INE | Verified Credential</p>
-    </div>
-  </a>
+<div class="cert-grid-row">
+  <!-- eJPT Card -->
+  <div class="cert-card">
+    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/ejpt.png" alt="INE eJPT Certification Badge" class="cert-img" />
+    <h3>eJPT – Junior Penetration Tester</h3>
+    <p><a href="https://certs.ine.com/418db589-3ab5-4b4e-9a3c-236681afa28a#acc.9iOk41zd" target="_blank">Issued by INE | Verified Credential</a></p>
+  </div>
+
+  <!-- CPTS Card (Placeholder) -->
+  <div class="cert-card">
+    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cpts.png" alt="Hack The Box CPTS Badge" class="cert-img" />
+    <h3>CPTS – Certified Penetration Testing Specialist</h3>
+    <p><em>Pending verification…</em></p>
+  </div>
 </div>
 </div>
 
