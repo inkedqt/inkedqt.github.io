@@ -189,3 +189,12 @@ footer {
     max-width: 100px;
   }
 }
+/* === cert image resize === */
+.cert-img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px #ff66c4;
+  display: block;
+  margin: 1rem auto;
+}
