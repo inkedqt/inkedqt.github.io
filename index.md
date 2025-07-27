@@ -26,6 +26,12 @@ description: "A showcase of Hack The Box writeups and offensive security journey
       <h3>eJPT – Junior Penetration Tester</h3>
       <p><a href="https://certs.ine.com/418db589-3ab5-4b4e-9a3c-236681afa28a#acc.9iOk41zd" target="_blank">Issued by INE | Verified Credential</a></p>
     </div>
+    <!-- ICCA Card -->
+    <div class="cert-card">
+      <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/icca.png" alt="INE ICCA Certification Badge" class="cert-img" />
+      <h3>ICCA – INE Certified Cloud Associate</h3>
+      <p><a href="https://certs.ine.com/7e00ab5d-87c4-426d-b3f0-2f97dcdd19b7#acc.thj68QBy" target="_blank">Issued by INE | Verified Credential</a></p>
+    </div>
     <!-- CPTS Card (Placeholder) -->
     <div class="cert-card">
       <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cpts.png" alt="Hack The Box CPTS Badge" class="cert-img" />
