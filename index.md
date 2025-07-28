@@ -8,14 +8,16 @@ description: "A showcase of Hack The Box writeups and offensive security journey
 <div class="container">
  <div class="portfolio">
   <h1 class="highlight">🛡️ Cyber Security Portfolio</h1>
-  <p>Hi, I'm <strong>Tate Pannam</strong>, a cyber security student at Victoria University in Melbourne, Australia. This site showcases my HTB journey through <em>retired</em>, <em>active</em>, and <em>seasonal</em> CTFs.</p>
+  <p>Hi, I'm <strong>Tate Pannam</strong>, a cyber security student at Victoria University in Melbourne, Australia. This site showcases my HTB journey through hands-on exploration of <em>retired</em>, <em>active</em>, and <em>seasonal</em> CTFs.</p>
+  <p>Many of the retired boxes were completed by referencing community writeups to reinforce concepts by doing — I believe the best way to learn is to <strong>break things and solve them</strong>.</p>
+
 <!-- Hero Banner -->
 <div class="hero">
   <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/tate-banner.png" alt="Tate hacking banner" class="hero-banner" />
   <div class="hero-text">
     <h1>Hi, I'm <span class="highlighted">Tate Pannam</span> 👋</h1>
-    <p>💻 Cyber security student | CTF enthusiast | Tattooed red team in training<br />
-    🧠 Retired/Active/Seasonal HTB boxes | 🛠️ Exploits | 🚩 Root flags | 🔐 PrivEsc wizardry</p>
+    <p>💻 Cyber security student | CTF enthusiast | Hands-on Learner<br />
+    🧠 Retired/Active/Seasonal HTB boxes | 🛠️ Exploits | 🚩 Root flags | 🔐 PrivEsc</p>
   </div>
  <!-- Certifications -->
   <h2 class="section-title">📜 Certifications</h2>
