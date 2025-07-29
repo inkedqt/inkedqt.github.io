@@ -42,9 +42,9 @@ description: "A showcase of Hack The Box writeups and offensive security journey
     </div>
     <!-- CBBH Card -->
     <div class="cert-card">
-      <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cbbh.png" alt="Hack The Box CBBH Badge" class="cert-img" />
+      <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cbbh2.png" alt="Hack The Box CBBH Badge" class="cert-img" />
       <h3>CBBH – Certified Bug Bounty Hunter</h3>
-      <p><em>Pending exam…</em></p>
+      <p><em>Training path completed</em></p>
     </div>
     <!-- Cert IV Cyber Security -->
     <div class="cert-card">
