@@ -34,15 +34,24 @@ description: "A showcase of Hack The Box writeups and offensive security journey
       <h3>ICCA – INE Certified Cloud Associate</h3>
       <p><a href="https://certs.ine.com/7e00ab5d-87c4-426d-b3f0-2f97dcdd19b7#acc.thj68QBy" target="_blank">Issued by INE | Verified Credential</a></p>
     </div>
-    <!-- CPTS Card -->
-    <div class="cert-card">
-      <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cpts.png" alt="Hack The Box CPTS Certificate – Tate Pannam" class="cert-img" />
-      <h3>CPTS – Certified Penetration Testing Specialist</h3>
-      Credential ID: <code>HTBCERT-3C9B65A17A</code><br />
+  <!-- CPTS Card -->
+  <div class="cert-card">
+    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cpts-full.png" alt="Hack The Box CPTS Certificate – Tate Pannam" class="cert-img" />
+    <h3>CPTS – Certified Penetration Testing Specialist</h3>
+    <p>
+      Credential ID: <span style="background: #1a1a1a; padding: 2px 6px; border-radius: 4px;">HTBCERT-3C9B65A17A</span>
+    </p>
+    <p>
       <a href="https://www.credly.com/badges/3dff4822-f70f-40c8-a4b4-ee19a43b1d26/public_url" target="_blank">
-      <span style="background: #1a1a1a; padding: 2px 6px; border-radius: 4px;">HTBCERT-3C9B65A17A</span></a>
-      <a href="https://www.hackthebox.com/certificates" target="_blank">Verify on HTB</a></p>
-    </div>
+        View Verified Badge on Credly
+      </a>
+    </p>
+    <p>
+      <a href="https://www.hackthebox.com/certificates" target="_blank">
+        Verify on Hack The Box
+      </a>
+    </p>
+  </div>
     <!-- CBBH Card -->
     <div class="cert-card">
       <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cbbh2.png" alt="Hack The Box CBBH Badge" class="cert-img" />
