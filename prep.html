@@ -5,19 +5,16 @@
   <title>Cert Prep Tracker – inksec.io</title>
   <style>
     body {
-      background: #111;
-      color: #eee;
-      font-family: 'Segoe UI', sans-serif;
-      padding: 30px;
+      background-color: #0d0d0d;
+      color: #ff66c4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
       max-width: 960px;
       margin: auto;
     }
     h1, h2 {
       margin-top: 40px;
-      color: #ff66c4;
-    }
-    p {
-      color: #ccc;
+      color: #ffffff;
     }
     table {
       width: 100%;
@@ -25,12 +22,12 @@
       margin-top: 10px;
     }
     th, td {
-      border: 1px solid #333;
+      border: 1px solid #444;
       padding: 8px;
+      color: #ffffff;
     }
     th {
       background: #222;
-      color: #ff66c4;
     }
     tr:hover {
       background-color: #1a1a1a;
@@ -41,6 +38,13 @@
 
   <h1>🧠 inksec.io – Cert Prep Tracker</h1>
   <p>Private list of boxes left to complete for CPTS, CBBH, and OSCP. Not linked from main site.</p>
+
+  <h2>📌 Legend</h2>
+  <p>
+    🧠 = High learning value<br>
+    🛡️ = Good for cert prep<br>
+    🎯 = OSCP-style privesc<br>
+  </p>
 
   <h2>🧠 CBBH Boxes To Do</h2>
   <table>
@@ -107,6 +111,21 @@
     <tr><td>Blackfield</td><td>SID brute → hash abuse</td></tr>
     <tr><td>Escape</td><td>GPO misconfig privesc</td></tr>
     <tr><td>TheFrizz</td><td>Advanced AD chain (OSCP++)</td></tr>
+    <tr><td>Sync</td><td>ADEnum → Win privesc (VulnLab)</td></tr>
+    <tr><td>Data</td><td>Web → Docker → root (VulnLab)</td></tr>
+    <tr><td>Build</td><td>CI → Creds → Docker escape (VulnLab)</td></tr>
+    <tr><td>Forgotten</td><td>SMB+Kerb chain (VulnLab)</td></tr>
+    <tr><td>Bamboo</td><td>Linux web RCE chain (VulnLab)</td></tr>
+    <tr><td>Baby</td><td>AD → token privesc (VulnLab)</td></tr>
+    <tr><td>Baby2</td><td>AD → Kerberoast (VulnLab)</td></tr>
+    <tr><td>Breach</td><td>BloodHound + ACL privesc (VulnLab)</td></tr>
+    <tr><td>Sweep</td><td>ADEnum + abuse chain (VulnLab)</td></tr>
+    <tr><td>Sendai</td><td>AD misconfig (VulnLab)</td></tr>
+    <tr><td>Trusted</td><td>ADChain (VulnLab)</td></tr>
+    <tr><td>Reflection</td><td>ADChain (VulnLab)</td></tr>
+    <tr><td>Hybrid</td><td>ADChain (VulnLab)</td></tr>
+    <tr><td>Lustrous</td><td>ADChain (VulnLab)</td></tr>
+    <tr><td>Heron</td><td>Assumed breach → Chain (VulnLab)</td></tr>
   </table>
 
 </body>
