@@ -36,7 +36,7 @@ description: "A showcase of Hack The Box writeups and offensive security journey
     </div>
   <!-- CPTS Card -->
   <div class="cert-card">
-    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cpts-full.png" alt="Hack The Box CPTS Certificate – Tate Pannam" class="cert-img" />
+    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cpts.png" alt="Hack The Box CPTS Certificate – Tate Pannam" class="cert-img" />
     <h3>CPTS – Certified Penetration Testing Specialist</h3>
     <p>
       Credential ID: <span style="background: #1a1a1a; padding: 2px 6px; border-radius: 4px;">HTBCERT-3C9B65A17A</span>
