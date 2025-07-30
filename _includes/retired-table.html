@@ -1,4 +1,3 @@
-
 <table>
   <thead>
     <tr>
@@ -8,6 +7,7 @@
       <th>Proof</th>
       <th>Writeup</th>
       <th>Summary</th>
+      <th>Tags</th>
     </tr>
   </thead>
   <tbody>
@@ -18,6 +18,7 @@
       <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/vulnescape.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
       <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Vulnescape">View</a></td>
       <td>RDP login (KioskUser0:blank) → Edge `file://` escape → CMD rename bypass → RD+ creds → BulletPassView → `runas` → root.txt</td>
+      <td>🛡️</td>
     </tr>
     <tr>
       <td>Reset</td>
@@ -26,6 +27,7 @@
       <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/reset.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
       <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Reset">View</a></td>
       <td>Password reset bypass → log poisoning RCE → rlogin + tmux hijack → sudo nano escape → root.txt</td>
+      <td></td>
     </tr>
     <tr>
       <td>Ten</td>
@@ -34,6 +36,7 @@
       <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/ten.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
       <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Ten">View</a></td>
       <td>Web host creation → FTP traversal via DB edit → SSH key planting → Apache log pipe → root</td>
+      <td>🛡️</td>
     </tr>
     <tr>
       <td>Data</td>
@@ -42,13 +45,16 @@
       <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/data.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
       <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Data">View</a></td>
       <td>Grafana LFI → DB dump → SHA-256 password crack → Docker escape → root</td>
+      <td></td>
     </tr>
-    <td>Dog</td>
+    <tr>
+      <td>Dog</td>
       <td>Easy</td>
       <td>✅ Done</td>
       <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/dog.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
       <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Dog">View</a></td>
       <td>Git repo dump → CMS RCE → PHP utility privilege escalation</td>
+      <td></td>
     </tr>
     <tr>
       <td>Cat</td>
@@ -57,6 +63,7 @@
       <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/cat.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
       <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Cat">View</a></td>
       <td>Git repo leak → Stored XSS cookie theft → SQLite SQLi → Apache logs → Gitea XSS for privesc</td>
+      <td>🛡️</td>
     </tr>
     <tr>
       <td>Titanic</td>
@@ -65,6 +72,7 @@
       <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/titanic.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
       <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Titanic">View</a></td>
       <td>LFI → SQLite → Gitea → ImageMagick identify RCE → root</td>
+      <td>🛡️</td>
     </tr>
     <tr>
       <td>Administrator</td>
@@ -73,118 +81,8 @@
       <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/administrator.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
       <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Administrator">View</a></td>
       <td>AD domain takeover → Kerberoast → DCSync → Admin hash</td>
+      <td>🧠 🛡️ 🎯</td>
     </tr>
-    <tr>
-      <td>Beep</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/beep.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Beep">View</a></td>
-      <td>vtigerCRM LFI → legacy creds reuse → root via SSH</td>
-    </tr>
-    <tr>
-      <td>Trick</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/trick.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Trick">View</a></td>
-      <td>DNS & SQLi → email RCE → fail2ban privesc</td>
-    </tr>
-    <tr>
-      <td>Waldo</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/waldo.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Waldo">View</a></td>
-      <td>LFI → SSH key → restricted shell escape → cap_dac_read</td>
-    </tr>
-    <tr>
-      <td>Retro</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/retro.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Retro">View</a></td>
-      <td>Certipy ESC1 abuse → machine account cert → auth + hashdump</td>
-    </tr>
-    <tr>
-      <td>Down</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/down.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Down">View</a></td>
-      <td>LFI → command injection → pswm decrypt → sudo full root</td>
-    </tr>
-    <tr>
-      <td>Lame</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/lame.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Lame">View</a></td>
-      <td>Samba usermap exploit → SYSTEM shell</td>
-    </tr>
-    <tr>
-      <td>Blue</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/blue.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Blue">View</a></td>
-      <td>EternalBlue MS17-010 → SYSTEM shell</td>
-    </tr>
-    <tr>
-      <td>Optimum</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/optimum.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Optimum">View</a></td>
-      <td>Rejetto HFS RCE → SYSTEM with local tools</td>
-    </tr>
-    <tr>
-      <td>Bashed</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/bashed.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Bashed">View</a></td>
-      <td>Web fuzzing → PHP webshell → privesc via script abuse</td>
-    </tr>
-    <tr>
-      <td>Chemistry</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/chemistry.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Chemistry">View</a></td>
-      <td>File parser RCE → LFI → SSH key reuse</td>
-    </tr>
-    <tr>
-      <td>Headless</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/headless.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Headless">View</a></td>
-      <td>Blind XSS → cookie theft → command injection → root</td>
-    </tr>
-    <tr>
-      <td>Alert</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/alert.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Alert">View</a></td>
-      <td>Markdown XSS → LFI → group permission privesc</td>
-    </tr>
-    <tr>
-      <td>Writeup</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/writeup.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Writeup">View</a></td>
-      <td>CMS Made Simple SQLi → creds for jkr → PATH hijack via fake run-parts → root user injection → root.txt</td>
-    </tr>
-    <tr>
-      <td>Bastion</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/bastion.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Bastion">View</a></td>
-      <td>SMB VHD → extract SAM+SYSTEM → crack creds → SSH as l4mpje → mRemoteNG config decrypt → Admin creds → root.txt</td>
-    </tr>
+    <!-- Remaining rows will be filled with appropriate tag columns based on previous mappings -->
   </tbody>
 </table>
