@@ -34,11 +34,13 @@ description: "A showcase of Hack The Box writeups and offensive security journey
       <h3>ICCA – INE Certified Cloud Associate</h3>
       <p><a href="https://certs.ine.com/7e00ab5d-87c4-426d-b3f0-2f97dcdd19b7#acc.thj68QBy" target="_blank">Issued by INE | Verified Credential</a></p>
     </div>
-    <!-- CPTS Card (Placeholder) -->
+    <!-- CPTS Card -->
     <div class="cert-card">
       <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cpts.png" alt="Hack The Box CPTS Badge" class="cert-img" />
       <h3>CPTS – Certified Penetration Testing Specialist</h3>
-      <p><em>Pending verification…</em></p>
+      Credential ID: <code>HTBCERT-3C9B65A17A</code><br />
+      <a href="https://www.hackthebox.com/certificates" target="_blank">Verify on HTB</a>
+  </p>
     </div>
     <!-- CBBH Card -->
     <div class="cert-card">
