@@ -55,11 +55,13 @@ description: "A showcase of Hack The Box writeups and offensive security journey
     </div>
   </div>
   </div>
-  <p style="text-align: right; font-size: 0.9em; margin-bottom: 0;">
-  <a href="/prep.html" style="text-decoration: none; color: #666;">
-    📋 Current Cert Prep List
-  </a>
-  </p>
+<p style="font-size: 0.9em; margin-bottom: 0.5em;">
+📋 <a href="/prep.html" style="text-decoration: none; color: #ff99ff;">
+Current Cert Prep List
+</a>
+</p>
+<h2>✅ Retired HTB Machines</h2>
+
   <h2 class="section-title">✅ Retired HTB Machines</h2>
   {% include retired-table.html %}
 
