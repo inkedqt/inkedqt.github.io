@@ -65,6 +65,20 @@ description: "A showcase of Hack The Box writeups and offensive security journey
       <p>Victoria University, Australia<br /><em>TAFE Accredited</em></p>
       <p><em>Currently completing</em></p>
     </div>
+    <!-- Cert IV in Info Tech (2003) -->
+    <div class="cert-card">
+      <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/certiv-it.png" alt="Cert IV Info Tech Badge" class="cert-img" />
+      <h3>Certificate IV in Information Technology</h3>
+      by <em>Computer Power Training Institute</em><br />
+      <em>Completed at a now-defunct training Institute – old school creds!</em></p>
+    </div>
+    <div class="cert-card">
+      <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/iprimus.png" alt="iPrimus Logo" class="cert-img" />
+      <h3>IT Helpdesk Support</h3>
+      <p><strong>iPrimus Telecom, Melbourne</strong><br />
+      2002 – 2010<br />
+      Provided technical support, diagnostics, and customer assistance across residential and business internet services. Gained strong foundations in networking, troubleshooting, and client communication.</p>
+    </div>
   </div>
   </div>
 <p style="text-align: center; font-size: 0.9em; margin-top: 20px; margin-bottom: 0;">
