@@ -1,7 +1,9 @@
 ---
 layout: default
-title: "🛡️ Tate Pannam – Cyber Security Portfolio"
-description: "A showcase of Hack The Box writeups and offensive security journey."
+title: Inksec.io – CTF Writeups, Cybersecurity Portfolio, and Certifications
+description: Explore detailed Hack The Box writeups, cyber certs like CPTS & eJPT, and real-world experience in ethical hacking and penetration testing.
+keywords: CTF, Hack The Box, CPTS, Cybersecurity, Penetration Testing, OSCP, CBBH, writeups, inksec, eJPT, infosec portfolio
+author: Tate Pannam
 ---
 
 <link rel="stylesheet" href="/assets/css/style.css">
