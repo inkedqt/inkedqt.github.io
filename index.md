@@ -52,34 +52,42 @@ description: "A showcase of Hack The Box writeups and offensive security journey
       </a>
     </p>
   </div>
-    <!-- CBBH Card -->
-    <div class="cert-card">
-      <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cbbh2.png" alt="Hack The Box CBBH Badge" class="cert-img" />
-      <h3>CBBH – Certified Bug Bounty Hunter</h3>
-      <p><em>Training path completed</em></p>
-    </div>
-    <!-- Cert IV Cyber Security -->
-    <div class="cert-card">
-      <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/vu-cyber.png" alt="Victoria University Cyber Security" class="cert-img" />
-      <h3>Cert IV – Cyber Security</h3>
-      <p>Victoria University, Australia<br /><em>TAFE Accredited</em></p>
-      <p><em>Currently completing</em></p>
-    </div>
-    <!-- Cert IV in Info Tech (2003) -->
-    <div class="cert-card">
-      <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/certiv-it.png" alt="Cert IV Info Tech Badge" class="cert-img" />
-      <h3>Certificate IV in Information Technology</h3>
-      by <em>Computer Power Training Institute</em><br />
-      <em>Completed at a now-defunct training Institute – old school creds!</em></p>
-    </div>
-    <div class="cert-card">
-      <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/iprimus.png" alt="iPrimus Logo" class="cert-img" />
-      <h3>IT Helpdesk Support</h3>
-      <p><strong>iPrimus Telecom, Melbourne</strong><br />
-      2002 – 2010<br />
-      Provided technical support, diagnostics, and customer assistance across residential and business internet services. Gained strong foundations in networking, troubleshooting, and client communication.</p>
-    </div>
+  <!-- CBBH Card -->
+  <div class="cert-card">
+    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cbbh2.png" alt="Hack The Box CBBH Badge" class="cert-img" />
+    <h3>CBBH – Certified Bug Bounty Hunter</h3>
+    <p><em>Training path completed</em></p>
   </div>
+  <!-- Cert IV Cyber Security -->
+  <div class="cert-card">
+    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/vu-cyber.png" alt="Victoria University Cyber Security" class="cert-img" />
+    <h3>Cert IV – Cyber Security</h3>
+    <p>Victoria University, Australia<br /><em>TAFE Accredited</em></p>
+    <p><em>Currently completing</em></p>
+  </div>
+  <!-- Cert IV in Info Tech (2003) -->
+  <div class="cert-card">
+    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/certiv-it.png" alt="Cert IV Info Tech Badge" class="cert-img" />
+    <h3>Certificate IV in Information Technology</h3>
+    by <em>Computer Power Training Institute</em><br />
+    <em>Completed at a now-defunct training Institute – old school creds!</em></p>
+  </div>
+  <div class="cert-card">
+    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/iprimus.png" alt="iPrimus Logo" class="cert-img" />
+    <h3>IT Helpdesk Support</h3>
+    <p><strong>iPrimus Telecom, Melbourne</strong><br />
+    2002 – 2010<br />
+    Provided technical support, diagnostics, and customer assistance across residential and business internet services. Gained strong foundations in networking, troubleshooting, and client communication.</p>
+  </div>
+  <!-- HTB Profile Card -->
+  <div class="cert-card">
+   <img src="https://www.hackthebox.com/images/logo-htb.svg" alt="HTB Logo" class="cert-img" />
+   <h3>Hack The Box Profile</h3>
+   <p>
+   View my public profile to see completed boxes, certifications, and progress.<br />
+   <a href="https://app.hackthebox.com/profile/178947" target="_blank">🔗 View on HTB</a>
+   </p>
+  </div
   </div>
 <p style="text-align: center; font-size: 0.9em; margin-top: 20px; margin-bottom: 0;">
   📋 <a href="/prep.html" style="text-decoration: none; color: #ff99ff;">
