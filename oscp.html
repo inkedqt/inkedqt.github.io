@@ -3,43 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OSCP PG Practice</title>
+  <title>OSCP PG Practice Boxes</title>
   <style>
     body {
       background-color: #0d0d0d;
-      color: #ff66c4;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 2rem;
+      color: #ffccff;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      padding: 30px;
     }
     table {
-      width: 100%;
+      margin: 0 auto;
       border-collapse: collapse;
-      margin-top: 2rem;
+      width: 90%;
+      box-shadow: 0 0 10px #ff66c4;
     }
     th, td {
-      padding: 1rem;
-      border: 1px solid #ff66c4;
+      border: 1px solid #ff99ff;
+      padding: 10px;
       text-align: left;
     }
     th {
-      background-color: #1a1a1a;
+      background-color: #1a001a;
+      color: #ff66c4;
     }
     tr:nth-child(even) {
       background-color: #1f1f1f;
     }
     a {
-      color: #a3c9ff;
+      color: #ff99ff;
       text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      color: #ff66c4;
     }
   </style>
 </head>
 <body>
-  <h1>🎯 OSCP Bonus Points Practice (PG)</h1>
-  <p>To earn the <strong>+10 bonus exam points</strong> via Proving Grounds (PG Practice), complete and document the following 10 boxes:</p>
-
+  <h1>🎯 OSCP Proving Grounds Bonus Box List</h1>
+  <p>Complete these 10 PG Practice boxes and submit a report for an easy +10 exam points.</p>
   <table>
     <thead>
       <tr>
+        <th>#</th>
         <th>Machine</th>
         <th>Difficulty</th>
         <th>Status</th>
@@ -48,77 +57,18 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>ClamAV</td>
-        <td>Easy</td>
-        <td>⏳ Pending</td>
-        <td><a href="#">-</a></td>
-        <td>Retired OSCP exam box</td>
-      </tr>
-      <tr>
-        <td>Twiggy</td>
-        <td>Easy</td>
-        <td>⏳ Pending</td>
-        <td><a href="#">-</a></td>
-        <td>Good warm-up for enumeration</td>
-      </tr>
-      <tr>
-        <td>Graph</td>
-        <td>Easy</td>
-        <td>⏳ Pending</td>
-        <td><a href="#">-</a></td>
-        <td>Common web misconfig example</td>
-      </tr>
-      <tr>
-        <td>Robust</td>
-        <td>Easy</td>
-        <td>⏳ Pending</td>
-        <td><a href="#">-</a></td>
-        <td>Likely involves binary abuse</td>
-      </tr>
-      <tr>
-        <td>Pebbles</td>
-        <td>Easy</td>
-        <td>⏳ Pending</td>
-        <td><a href="#">-</a></td>
-        <td>Simple privilege escalation</td>
-      </tr>
-      <tr>
-        <td>Mice</td>
-        <td>Easy</td>
-        <td>⏳ Pending</td>
-        <td><a href="#">-</a></td>
-        <td>Light web fuzzing + privesc</td>
-      </tr>
-      <tr>
-        <td>CVE-2023-46818</td>
-        <td>Easy</td>
-        <td>⏳ Pending</td>
-        <td><a href="#">-</a></td>
-        <td>Recent vuln with real-world value</td>
-      </tr>
-      <tr>
-        <td>Muddy</td>
-        <td>Easy</td>
-        <td>⏳ Pending</td>
-        <td><a href="#">-</a></td>
-        <td>Good intro to misconfigured services</td>
-      </tr>
-      <tr>
-        <td>Exfiltrated</td>
-        <td>Easy</td>
-        <td>⏳ Pending</td>
-        <td><a href="#">-</a></td>
-        <td>Simple file extraction + escalation</td>
-      </tr>
-      <tr>
-        <td>Flimsy</td>
-        <td>Easy</td>
-        <td>⏳ Pending</td>
-        <td><a href="#">-</a></td>
-        <td>Likely involves weak permissions</td>
-      </tr>
+      <tr><td>1</td><td>Twiggy</td><td>Easy</td><td>⏳ Pending</td><td>-</td><td>Great warm-up for web enumeration</td></tr>
+      <tr><td>2</td><td>ClamAV</td><td>Easy</td><td>⏳ Pending</td><td>-</td><td>Retired OSCP exam box</td></tr>
+      <tr><td>3</td><td>Mice</td><td>Easy</td><td>⏳ Pending</td><td>-</td><td>Light fuzzing and privesc intro</td></tr>
+      <tr><td>4</td><td>Muddy</td><td>Easy</td><td>⏳ Pending</td><td>-</td><td>Service misconfig learning</td></tr>
+      <tr><td>5</td><td>Graph</td><td>Easy</td><td>⏳ Pending</td><td>-</td><td>Web misconfig challenge</td></tr>
+      <tr><td>6</td><td>Pebbles</td><td>Easy</td><td>⏳ Pending</td><td>-</td><td>Linux privesc via perms</td></tr>
+      <tr><td>7</td><td>Flimsy</td><td>Easy</td><td>⏳ Pending</td><td>-</td><td>Weak permission exploitation</td></tr>
+      <tr><td>8</td><td>CVE-2023-46818</td><td>Easy</td><td>⏳ Pending</td><td>-</td><td>Recent vuln with real-world value</td></tr>
+      <tr><td>9</td><td>Exfiltrated</td><td>Easy</td><td>⏳ Pending</td><td>-</td><td>File gathering and enumeration</td></tr>
+      <tr><td>10</td><td>Robust</td><td>Easy</td><td>⏳ Pending</td><td>-</td><td>Binary-focused with light reverse</td></tr>
     </tbody>
   </table>
+  <p style="margin-top: 20px;">📋 Remember: Each machine must be documented with sufficient detail and submitted as part of your OSCP PG Report.</p>
 </body>
 </html>
