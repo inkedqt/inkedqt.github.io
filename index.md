@@ -84,8 +84,12 @@ author: Tate Pannam
   </div>
   </div>
 <p style="text-align: center; font-size: 0.9em; margin-top: 20px; margin-bottom: 0;">
-  📋 <a href="/prep.html" style="text-decoration: none; color: #ff99ff;">
+  📋 
+  <a href="/prep.html" style="text-decoration: none; color: #ff99ff;">
     Current Cert Prep List
+  </a> | 
+  <a href="/oscp.html" style="text-decoration: none; color: #ff99ff;">
+    OSCP Bonus Boxes
   </a>
 </p>
   <h2 class="section-title">✅ Retired HTB Machines</h2>
