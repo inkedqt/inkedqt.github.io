@@ -10,8 +10,9 @@ author: Tate Pannam
 <div class="container">
  <div class="portfolio">
   <h1 class="highlight">🛡️ Cyber Security Portfolio</h1>
-  <p>Hi, I'm <strong>Tate Pannam</strong>, a cyber security student at Victoria University in Melbourne, Australia. This site showcases my HTB journey through hands-on exploration of <em>retired</em>, <em>active</em>, and <em>seasonal</em> CTFs.</p>
-  <p>Many of the retired boxes were completed by referencing community writeups to reinforce concepts by doing — I believe the best way to learn is to <strong>break things and solve them</strong>.</p>
+<p>Hi, I'm <strong>Tate Pannam</strong>, a cyber security student at Victoria University in Melbourne, Australia. This site documents my Hack The Box journey — including <em>active</em>, <em>seasonal</em>, and <em>retired</em> CTF machines — with a focus on practical skill development through hands-on exploitation and enumeration.</p>
+<p>While I initially used community writeups to reinforce foundational concepts, many boxes here — including several now-retired ones — were completed independently while still active. If you see points awarded in the proof screenshots, that means the box was solved before it was retired.</p>
+
 
 <!-- Hero Banner -->
 <div class="hero">
