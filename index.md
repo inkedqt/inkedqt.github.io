@@ -68,6 +68,21 @@ author: Tate Pannam
       <p>Victoria University, Australia<br /><em>TAFE Accredited</em></p>
       <p><em>Currently completing</em></p>
     </div>
+    <!-- AWS Academy Cloud Foundations -->
+    <div class="cert-card">
+      <img
+        src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/aws_cloud_foundations.png"
+        alt="AWS Academy Cloud Foundations Badge"
+        class="cert-img"
+      />
+      <h3>AWS Academy Cloud Foundations</h3>
+      <p>Issuer: AWS Academy • Hours: 20 • Issued: 2025-06-22</p>
+      <p>
+        <a href="https://www.credly.com/badges/5ddab929-392f-4e98-9a0e-4089c4a3dd90/print" target="_blank" rel="noopener">
+          View Verified Badge on Credly
+        </a>
+      </p>
+    </div>
     <!-- Cert IV in Info Tech (2003) -->
     <div class="cert-card">
       <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/certiv-it.png" alt="Cert IV Info Tech Badge" class="cert-img" />
