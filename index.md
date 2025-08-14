@@ -76,7 +76,7 @@ author: Tate Pannam
         class="cert-img"
       />
       <h3>AWS Academy Cloud Foundations</h3>
-      <p>Issuer: AWS Academy • Hours: 20 • Issued: 2025-06-22</p>
+      <p>Issuer: AWS Academy • Issued: 2025-06-22</p>
       <p>
         <a href="https://www.credly.com/badges/5ddab929-392f-4e98-9a0e-4089c4a3dd90/print" target="_blank" rel="noopener">
           View Verified Badge on Credly
