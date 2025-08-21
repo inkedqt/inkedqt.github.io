@@ -101,11 +101,8 @@ author: Tate Pannam
   </div>
 <p style="text-align: center; font-size: 0.9em; margin-top: 20px; margin-bottom: 0;">
   📋 
-  <a href="/prep.html" style="text-decoration: none; color: #ff99ff;">
-    Current Cert Prep List
-  </a> | 
-  <a href="/oscp.html" style="text-decoration: none; color: #ff99ff;">
-    OSCP Bonus Boxes
+  <a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/HomeLab" style="text-decoration: none; color: #ff99ff;">
+    My Home Lab setup pfSense segmentation → Security Onion AIO (Zeek/Suricata) + Splunk → AD DC + 2×Win10 → Kali attack box → SPAN mirror (em4)
   </a>
 </p>
   <h2 class="section-title">✅ Retired HTB Machines</h2>
