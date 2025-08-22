@@ -99,6 +99,13 @@ author: Tate Pannam
     </div>
   </div>
   </div>
+ <!-- HTB Prep Link -->
+<div class="cert-prep-link" style="margin-top: 20px;">
+  <a href="prep.html" 
+     style="color: #ff66c4; font-weight: bold; text-decoration: none;">
+    🔗 HTB & Cert Prep Tracker
+  </a>
+</div> 
 <p style="text-align: center; font-size: 0.9em; margin-top: 20px; margin-bottom: 0;">
   📋 
   <a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/HomeLab" style="text-decoration: none; color: #ff99ff;">

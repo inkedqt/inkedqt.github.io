@@ -32,6 +32,39 @@
     tr:hover {
       background-color: #1a1a1a;
     }
+    a {
+      color: #ff66c4;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: #ff85d4;
+    }
+    .prep-list h3 {
+      margin-top: 1.25rem;
+      margin-bottom: .5rem;
+      color: #ff66c4;
+      font-weight: 800;
+    }
+    .prep-list ul {
+      list-style: disc;
+      padding-left: 1.25rem;
+    }
+    .prep-list li {
+      margin: .2rem 0;
+    }
+    .done {
+      text-decoration: line-through;
+      opacity: .65;
+    }
+    .tag {
+      background: #0f0f0f;
+      border: 1px solid #222;
+      border-radius: 6px;
+      padding: .1rem .4rem;
+      margin-left: .35rem;
+      font-size: .8rem;
+      color: #bbb;
+    }
   </style>
 </head>
 <body>
@@ -39,94 +72,101 @@
   <h1>🧠 inksec.io – Cert Prep Tracker</h1>
   <p>Private list of boxes left to complete for CPTS, CBBH, and OSCP. Not linked from main site.</p>
 
-  <h2>📌 Legend</h2>
-  <p>
-    🧠 = High learning value<br>
-    🛡️ = Good for cert prep<br>
-    🎯 = OSCP-style privesc<br>
-  </p>
+  <section class="max-w-4xl mx-auto my-10">
+    <h2 class="text-2xl font-extrabold mb-4 text-pink-500">HTB + CBBH Prep</h2>
 
-  <h2>🧠 CBBH Boxes To Do</h2>
-  <table>
-    <tr><th>Box</th><th>Notes</th></tr>
-    <tr><td>Support</td><td>Blind XSS → JS exfiltration</td></tr>
-    <tr><td>Sau</td><td>SSRF → JWT hijack</td></tr>
-    <tr><td>Saucy</td><td>DOM-based XSS</td></tr>
-    <tr><td>Unicode</td><td>Header obfuscation + XSS bypass</td></tr>
-    <tr><td>Hawk</td><td>DOM clobbering → XSS</td></tr>
-    <tr><td>Busqueda</td><td>XSS → privesc chain</td></tr>
-  </table>
+    <div class="prep-list text-white">
 
-  <h2>🛡️ CPTS Boxes To Do</h2>
-  <table>
-    <tr><th>Box</th><th>Notes</th></tr>
-    <tr><td>Delivery</td><td>Email → internal dashboard</td></tr>
-    <tr><td>Remote</td><td>CVE-based initial → privesc</td></tr>
-    <tr><td>Access</td><td>FTP + creds → RDP</td></tr>
-    <tr><td>MetaTwo</td><td>RCE → shadow credentials</td></tr>
-    <tr><td>Shoppy</td><td>SQLi → Docker escape</td></tr>
-    <tr><td>Manager</td><td>SSRF → JWT bypass + upload</td></tr>
-    <tr><td>Outdated</td><td>Drupal CVE chain</td></tr>
-    <tr><td>Agile</td><td>Source code leak</td></tr>
-    <tr><td>Driver</td><td>Login panel + Docker</td></tr>
-    <tr><td>Vintage</td><td>AD privesc (SeBackupPrivilege)</td></tr>
-    <tr><td>Hospital</td><td>JWT → backup → privesc</td></tr>
-    <tr><td>Sekhmet</td><td>JWT + chained privesc</td></tr>
-    <tr><td>Certified</td><td>Assumed breach → root</td></tr>
-    <tr><td>UHC-Union</td><td>UHC-style multi-vector box</td></tr>
-    <tr><td>UHC-Pressed</td><td>UHC-style privesc chain</td></tr>
-    <tr><td>UHC-Logforge</td><td>Log4Shell injection chain</td></tr>
-    <tr><td>Reddish</td><td>Token abuse → Win privesc</td></tr>
-  </table>
+      <!-- AD Machines -->
+      <h3>🎯 Active Directory (AD) Machines</h3>
+      <ul>
+        <li>Forest</li>
+        <li>Nest</li>
+        <li>Monteverde</li>
+        <li>Escape</li>
+        <li>Ypuffy</li>
+        <li class="done">Legacy</li>
+        <li>Blackfield</li>
+        <li>ServMon</li>
+        <li class="done">Optimum</li>
+        <li class="done">Sauna</li>
+      </ul>
 
-  <h2>🎯 OSCP Boxes To Do</h2>
-  <table>
-    <tr><th>Box</th><th>Notes</th></tr>
-    <tr><td>Tabby</td><td>LFI → LXD privesc</td></tr>
-    <tr><td>OpenAdmin</td><td>Admin panel → reused creds</td></tr>
-    <tr><td>Help</td><td>PHP deserialization</td></tr>
-    <tr><td>Editorial</td><td>Tar race → root</td></tr>
-    <tr><td>Magic</td><td>Image upload bypass → shell</td></tr>
-    <tr><td>Networked</td><td>sudo & suid path exploitation</td></tr>
-    <tr><td>CozyHosting</td><td>Admin portal + SSTI</td></tr>
-    <tr><td>Swagshop</td><td>Magento RCE</td></tr>
-    <tr><td>Nineveh</td><td>Web vuln + SUID abuse</td></tr>
-    <tr><td>Analytics</td><td>Custom login bypass</td></tr>
-    <tr><td>Usage</td><td>Known CVE chain</td></tr>
-    <tr><td>Builder</td><td>Misconfigured script privesc</td></tr>
-    <tr><td>Solidstate</td><td>SMTP enum → RCE</td></tr>
-    <tr><td>Knife</td><td>PHP RCE → privesc</td></tr>
-    <tr><td>Jerry</td><td>Tomcat → manager script</td></tr>
-    <tr><td>Jeeves</td><td>Nslookup trick for privesc</td></tr>
-    <tr><td>Buff</td><td>Gym Mgmt CVE → SYSTEM</td></tr>
-    <tr><td>Querier</td><td>MS-SQL + SMB abuse</td></tr>
-    <tr><td>Sniper</td><td>Chained web → privesc</td></tr>
-    <tr><td>Chatterbox</td><td>Uncommon RCE vuln</td></tr>
-    <tr><td>Netmon</td><td>Anonymous FTP → creds</td></tr>
-    <tr><td>Markup</td><td>Web admin → Win privesc</td></tr>
-    <tr><td>Active</td><td>WinRM → AD enum + privesc</td></tr>
-    <tr><td>Monteverde</td><td>WinRM → LDAP → AD privesc</td></tr>
-    <tr><td>Sauna</td><td>WinRM → Kerberoast</td></tr>
-    <tr><td>Forest</td><td>DCSync AD-style root</td></tr>
-    <tr><td>Blackfield</td><td>SID brute → hash abuse</td></tr>
-    <tr><td>Escape</td><td>GPO misconfig privesc</td></tr>
-    <tr><td>TheFrizz</td><td>Advanced AD chain (OSCP++)</td></tr>
-    <tr><td>Sync</td><td>ADEnum → Win privesc (VulnLab)</td></tr>
-    <tr><td>Data</td><td>Web → Docker → root (VulnLab)</td></tr>
-    <tr><td>Build</td><td>CI → Creds → Docker escape (VulnLab)</td></tr>
-    <tr><td>Forgotten</td><td>SMB+Kerb chain (VulnLab)</td></tr>
-    <tr><td>Bamboo</td><td>Linux web RCE chain (VulnLab)</td></tr>
-    <tr><td>Baby</td><td>AD → token privesc (VulnLab)</td></tr>
-    <tr><td>Baby2</td><td>AD → Kerberoast (VulnLab)</td></tr>
-    <tr><td>Breach</td><td>BloodHound + ACL privesc (VulnLab)</td></tr>
-    <tr><td>Sweep</td><td>ADEnum + abuse chain (VulnLab)</td></tr>
-    <tr><td>Sendai</td><td>AD misconfig (VulnLab)</td></tr>
-    <tr><td>Trusted</td><td>ADChain (VulnLab)</td></tr>
-    <tr><td>Reflection</td><td>ADChain (VulnLab)</td></tr>
-    <tr><td>Hybrid</td><td>ADChain (VulnLab)</td></tr>
-    <tr><td>Lustrous</td><td>ADChain (VulnLab)</td></tr>
-    <tr><td>Heron</td><td>Assumed breach → Chain (VulnLab)</td></tr>
-  </table>
+      <!-- Windows Priv Esc -->
+      <h3>🪟 Windows Privilege Escalation</h3>
+      <ul>
+        <li>Jeeves</li>
+        <li>Active</li>
+        <li>Buff</li>
+        <li class="done">Blue</li>
+        <li class="done">Devel</li>
+        <li class="done">Optimum</li>
+        <li>Carrier</li>
+      </ul>
 
+      <!-- Linux Priv Esc -->
+      <h3>🐧 Linux Privilege Escalation</h3>
+      <ul>
+        <li class="done">Beep</li>
+        <li>Shocker</li>
+        <li class="done">Bashed</li>
+        <li>Knife</li>
+        <li>SneakyMailer</li>
+        <li>Traverxec</li>
+        <li class="done">Lame</li>
+        <li>Carrier</li>
+        <li>Sunday</li>
+      </ul>
+
+      <!-- Web Exploitation -->
+      <h3>🌐 Web Exploitation</h3>
+      <ul>
+        <li>Horizontall</li>
+        <li>Cronos</li>
+        <li>Teacher</li>
+        <li>Vault</li>
+        <li>OpenAdmin</li>
+        <li>SwagShop</li>
+        <li>Obscurity</li>
+        <li>Tabby</li>
+      </ul>
+
+      <!-- Password / Hash -->
+      <h3>🔐 Password Cracking / Hash Attacks</h3>
+      <ul>
+        <li>Blunder</li>
+        <li>Carrier</li>
+        <li>Tabby</li>
+      </ul>
+
+      <!-- Labs -->
+      <h3>📦 Other HTB Machines / Labs</h3>
+      <ul>
+        <li>HTB Union</li>
+        <li>HTB Soccer</li>
+        <li>HTB Delivery</li>
+        <li>HTB Access</li>
+        <li>HTB MetaTwo</li>
+        <li>HTB Driver</li>
+        <li class="done">HTB Trick</li>
+        <li>HTB Shoppy</li>
+        <li>HTB Manager</li>
+        <li>HTB Outdated</li>
+        <li>HTB Agile</li>
+        <li>HTB Hospital</li>
+        <li>HTB Reddish</li>
+        <li>HTB Sekhmet</li>
+      </ul>
+
+      <!-- CBBH -->
+      <h3>🕸️ CBBH Web Exploitation Practice</h3>
+      <ul>
+        <li>Track: <a href="https://app.hackthebox.com/tracks/OWASP-Top-10" target="_blank">OWASP Top 10</a></li>
+        <li>Fortress: <a href="https://app.hackthebox.com/fortresses/2" target="_blank">Akerva Fortress</a></li>
+        <li>Machines: BountyHunter, Horizontall, Academy, Meta, Forge, Nineveh</li>
+      </ul>
+
+    </div>
+  </section>
 </body>
 </html>
