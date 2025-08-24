@@ -366,6 +366,22 @@
       <td>User enum from website → Kerbrute → AS-REP roast (j.rock) → WinRM → Server Operators service abuse → SYSTEM</td>
     </tr>
     <tr>
+      <td>LazyAdmin</td>
+      <td>Easy</td>
+      <td>✅ Done</td>
+      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/thm_lazyadmin.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
+      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/THM/LazyAdmin">View</a></td>
+      <td>/SweetRice <code>/content/inc</code> backup leak → MD5 crack (manager) → <code>/content/as</code> admin → PHP upload → webshell → sudo perl <code>backup.pl</code> → overwrite <code>/etc/copy.sh</code> → root</td>
+    </tr>
+    <tr>
+      <td>ArchAngel</td>
+      <td>Easy</td>
+      <td>✅ Done</td>
+      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/thm_archangel.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
+      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/THM/ArchAngel">View</a></td>
+      <td>/LFI on <code>/test.php?view=</code> → Apache log poisoning via <code>User-Agent</code> → RCE (www-data) → cron overwrite <code>/opt/helloworld.sh</code> → SUID PATH hijack (<code>~/secret/backup</code> calls <code>cp</code>) → root</td>
+    </tr>
+    <tr>
       <td>Attacktive Directory</td>
       <td>Easy</td>
       <td>✅ Done</td>
