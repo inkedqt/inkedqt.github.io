@@ -57,21 +57,24 @@ author: Tate Pannam
   </div>
   <!-- CBBH Card -->
   <div class="cert-card">
-    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cbbh.png" alt="Hack The Box CBBH Badge" class="cert-img" />
+    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cbbh.png"
+        alt="Hack The Box CBBH Certification Badge" class="cert-img" />
     <h3>CBBH – Certified Bug Bounty Hunter</h3>
     <p>
-      Credential ID: <span style="background: #1a1a1a; padding: 2px 6px; border-radius: 4px;">HTBCERT-8965886BBB</span>
+      Credential ID:
+      <span style="background:#1a1a1a; padding:2px 6px; border-radius:4px;">HTBCERT-8965886BBB</span>
     </p>
     <p>
-      <a href="https://www.credly.com/badges/3dff4822-f70f-40c8-a4b4-ee19a43b1d26/public_url" target="_blank">
+      <a href="https://www.credly.com/badges/3dff4822-f70f-40c8-a4b4-ee19a43b1d26/public_url" target="_blank" rel="noopener">
         View Verified Badge on Credly
       </a>
     </p>
     <p>
-      <a href="https://www.hackthebox.com/certificates" target="_blank">
+      <a href="https://www.hackthebox.com/certificates" target="_blank" rel="noopener">
         Verify on Hack The Box
       </a>
-    </div>
+    </p>
+  </div>
     <!-- Cert IV Cyber Security -->
     <div class="cert-card">
       <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/vu-cyber.png" alt="Victoria University Cyber Security" class="cert-img" />
