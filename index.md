@@ -65,7 +65,7 @@ author: Tate Pannam
       <span style="background:#1a1a1a; padding:2px 6px; border-radius:4px;">HTBCERT-8965886BBB</span>
     </p>
     <p>
-      <a href="https://www.credly.com/badges/3dff4822-f70f-40c8-a4b4-ee19a43b1d26/public_url" target="_blank" rel="noopener">
+      <a href="https://www.credly.com/badges/2bbefbd8-a51a-4459-a3eb-8f42e4953f17" target="_blank" rel="noopener">
         View Verified Badge on Credly
       </a>
     </p>
