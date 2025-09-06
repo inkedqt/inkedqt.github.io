@@ -1,4 +1,3 @@
-{% assign retired = site.data.retired | default: [] %}
 <table>
   <thead>
     <tr>
@@ -12,94 +11,51 @@
     </tr>
   </thead>
   <tbody>
-  {% for m in retired %}
+    {%- for m in site.data.retired -%}
     <tr>
       <td>{{ m.name | default: m.machine }}</td>
       <td>{{ m.difficulty }}</td>
       <td>{{ m.status | default: "✅ Done" }}</td>
+
+      {%- assign proof_src = m.proof
+         | default: m.proof_img
+         | default: m.proof_url
+         | default: m.image
+         | default: m.proofsrc -%}
       <td>
-        {% if m.proof %}
-          <img src="{{ m.proof }}" style="max-width:80px; border-radius:6px; box-shadow:0 0 6px #ff66c4;" />
-        {% endif %}
+        {%- if proof_src -%}
+          <img src="{{ proof_src }}" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" />
+        {%- endif -%}
       </td>
+
+      {%- assign wu = m.writeup_html
+         | default: m.writeup
+         | default: m.link
+         | default: m.url
+         | default: m.writeup_url -%}
       <td>
-        {% if m.writeup %}
-          <a href="{{ m.writeup }}">View</a>
-        {% endif %}
+        {%- if wu -%}
+          {%- if wu contains '<a ' -%}
+            {{ wu }}
+          {%- else -%}
+            <a href="{{ wu }}">View</a>
+          {%- endif -%}
+        {%- endif -%}
       </td>
+
       <td>{{ m.summary }}</td>
-      <td>{{ m.tags }}</td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
-
-<h2 class="text-xl font-bold mt-8 mb-4">🧪 Proving Grounds (PG) Boxes</h2>
-{% assign pg = site.data.pg | default: [] %}
-<table class="w-full text-left table-auto border-collapse mb-6">
-  <thead>
-    <tr class="bg-pink-600 text-white">
-      <th class="p-2">Box</th>
-      <th class="p-2">Difficulty</th>
-      <th class="p-2">Status</th>
-      <th class="p-2">Proof</th>
-      <th class="p-2">Writeup</th>
-      <th class="p-2">Notes</th>
-    </tr>
-  </thead>
-  <tbody class="bg-black text-white">
-  {% for b in pg %}
-    <tr>
-      <td class="p-2">{{ b.name | default: b.box }}</td>
-      <td class="p-2">{{ b.difficulty }}</td>
-      <td class="p-2">{{ b.status | default: "✅ Done" }}</td>
-      <td class="p-2">
-        {% if b.proof %}
-          <img src="{{ b.proof }}" class="w-20 rounded-xl shadow-md" />
-        {% endif %}
+      <td>
+        {%- if m.tags -%}
+          {%- for t in m.tags -%}
+            {%- assign t_up = t | upcase -%}
+            {%- if t_up contains 'CBBH' -%}<span title="Certified Bug Bounty Hunter">🧠</span>{%- endif -%}
+            {%- if t_up contains 'AD' or t_up contains 'WINDOWS' or t_up contains 'DEFENSE' -%}<span title="Windows/AD">🛡️</span>{%- endif -%}
+            {%- if t_up contains 'EASY' or t_up contains 'FAVORITE' or t_up contains 'ESSENTIAL' -%}<span title="Favorite/Essential">🎯</span>{%- endif -%}
+            {{ t }}
+          {%- endfor -%}
+        {%- endif -%}
       </td>
-      <td class="p-2">
-        {% if b.writeup %}
-          <a href="{{ b.writeup }}" class="text-pink-400 underline">View</a>
-        {% endif %}
-      </td>
-      <td class="p-2">{{ b.notes | default: b.summary }}</td>
     </tr>
-  {% endfor %}
-  </tbody>
-</table>
-
-<h2 class="text-xl font-bold mt-8 mb-4">🧪 Try Hack Me (THM) Boxes</h2>
-{% assign thm = site.data.thm | default: [] %}
-<table class="w-full text-left table-auto border-collapse mb-6">
-  <thead>
-    <tr class="bg-pink-600 text-white">
-      <th class="p-2">Box</th>
-      <th class="p-2">Difficulty</th>
-      <th class="p-2">Status</th>
-      <th class="p-2">Proof</th>
-      <th class="p-2">Writeup</th>
-      <th class="p-2">Notes</th>
-    </tr>
-  </thead>
-  <tbody class="bg-black text-white">
-  {% for t in thm %}
-    <tr>
-      <td class="p-2">{{ t.name | default: t.box }}</td>
-      <td class="p-2">{{ t.difficulty }}</td>
-      <td class="p-2">{{ t.status | default: "✅ Done" }}</td>
-      <td class="p-2">
-        {% if t.proof %}
-          <img src="{{ t.proof }}" class="w-20 rounded-xl shadow-md" />
-        {% endif %}
-      </td>
-      <td class="p-2">
-        {% if t.writeup %}
-          <a href="{{ t.writeup }}" class="text-pink-400 underline">View</a>
-        {% endif %}
-      </td>
-      <td class="p-2">{{ t.notes | default: t.summary }}</td>
-    </tr>
-  {% endfor %}
+    {%- endfor -%}
   </tbody>
 </table>
