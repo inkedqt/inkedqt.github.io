@@ -1,0 +1,39 @@
+- name: Guardian
+  difficulty: Hard
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/guardian.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/Guardian
+  summary: Portal creds → SSH jamil → confs abuse → sudo safeapache2ctl → rootbash
+    → root
+- name: Previous
+  difficulty: Medium
+  status: ⏳ Active
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/previous.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/Previous
+  summary: Teaser — modern web/API challenge; careful boundary checks and clean Linux
+    escalation habits. Full write-up unlocks on retirement.
+- name: CodeTwo
+  difficulty: Easy
+  status: ⏳ Active
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/codeparttwo.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/CodePartTwo
+  summary: Teaser — modern web app; targeted enum, boundary reading, and Linux privesc
+    mindset. Full write-up unlocks on retirement.
+- name: Planning
+  difficulty: Easy
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/planning.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/Planning
+  summary: Subdomain → Grafana RCE → docker escape → SUID privesc
+- name: Nocturnal
+  difficulty: Easy
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/nocturnal.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/Nocturnal
+  summary: File leak → admin panel RCE → DB hash → SSH → CVE → root
+- name: Environment
+  difficulty: Medium
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/environment.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/Environment
+  summary: Laravel env bypass → avatar RCE → vault → sudo abuse

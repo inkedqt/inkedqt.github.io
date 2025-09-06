@@ -1,0 +1,92 @@
+- name: HTB Season 8 – Depths
+  difficulty: Season
+  status: 🏆 Platinum
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/htb_season8.png
+  writeup_url: https://labs.hackthebox.com/achievement/season/2216056/8
+  summary: 'Rank: 739 / 8036 Roots: 10 / 13 Users: 10 / 13'
+- name: Cobblestone
+  difficulty: Hard
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/cobblestone.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Cobblestone
+  summary: Web foothold → DB creds → SSH tunnel to XML-RPC service → Arbitrary file
+    leak → Root
+- name: Editor
+  difficulty: Easy
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/editor.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Editor
+  summary: nvme compile bug → binary patch → buffer overflow → ROP → reverse shell
+    → proof
+- name: Era
+  difficulty: Medium
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/era.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Era
+  summary: Subdomain fuzz → SSRF via download preview → DB leak → web RCE → SUID bash
+    → ASN1 signature bypass → root.txt
+- name: Mirage
+  difficulty: Hard
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/mirage.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Mirage
+  summary: GetNPUsers → Kerberos ticket crack → shadow credentials → ESC1 abuse via
+    Certipy → DA hash → root.txt
+- name: Outbound
+  difficulty: Easy
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/outbound.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Outbound
+  summary: Web creds reuse → Roundcube RCE → container escape → MySQL plaintext leak
+    → symlink overwrite to /etc/passwd → root
+- name: Voleur
+  difficulty: Medium
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/voleur.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Voleur
+  summary: Kerberos TGT → SMB creds → DPAPI masterkey + creds → BloodHound path →
+    SSH via id_rsa → Registry + NTDS.dit → secretsdump → getTGT → Domain Admin
+- name: RustyKey
+  difficulty: Hard
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/rustykey.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Rustykey
+  summary: WinRM creds → BloodHound edge → GenericWrite → password reset → ProtectedUsers
+    removal → S4U2Proxy → Domain Admin
+- name: Artificial
+  difficulty: Easy
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/artificial.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Artificial
+  summary: TensorFlow RCE via model → SQLite loot → MD5 crack → RESTIC trick → SUID
+    bash root
+- name: Sorcery
+  difficulty: Insane
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/sorcery.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Sorcery
+  summary: Git leak → passkey bypass → Kafka RCE → Docker registry → IPA privesc
+- name: TombWatcher
+  difficulty: Hard
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/tombwatcher.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Tombwatcher
+  summary: gMSA abuse → ACL pivot → deleted obj restore → CVE → Domain Admin
+- name: Fluffy
+  difficulty: Hard
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/fluffy.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Fluffy
+  summary: NTLMv2 → shadow creds → ADCS ESC1 → Pass-the-Cert → Domain Admin
+- name: Puppy
+  difficulty: Medium
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/puppy.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Puppy
+  summary: LDAP → KeePass → password reset → DPAPI secrets → NTDS.dit dump
+- name: Certificate
+  difficulty: Medium
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/certificate.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Certificate
+  summary: Cert template abuse → Certipy → Evil-WinRM → Administrator shell

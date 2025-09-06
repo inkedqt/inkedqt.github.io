@@ -1,3 +1,4 @@
+{% assign items = site.data.seasonal %}
 <table>
   <thead>
     <tr>
@@ -7,130 +8,30 @@
       <th>Proof</th>
       <th>Writeup</th>
       <th>Summary</th>
+      <th>Tags</th>
     </tr>
   </thead>
   <tbody>
+  {% for m in items %}
     <tr>
-      <td>HTB Season 8 – Depths</td>
-      <td>Season</td>
-      <td>🏆 Platinum</td>
+      <td>{{ m.name }}</td>
+      <td>{{ m.difficulty }}</td>
+      <td>{{ m.status }}</td>
       <td>
-        <!-- Save your screenshot as /assets/certs/htb_s8.png (or swap the src to your raw GitHub URL) -->
-        <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/htb_season8.png"
-            alt="HTB Season 8 Platinum Stats"
-            style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" />
+        {% if m.proof_img %}
+          <img src="{{ m.proof_img }}" style="max-width:80px;border-radius:6px;box-shadow:0 0 6px #ff66c4;" />
+        {% endif %}
       </td>
-      <!-- Optional: link to your HTB profile or a writeup page -->
-      <td><a href="https://labs.hackthebox.com/achievement/season/2216056/8" target="_blank" rel="noopener">Profile</a></td>
       <td>
-        <span style="display:inline-block;background:#111;border:1px solid #333;border-radius:6px;padding:.15rem .4rem;margin-right:.25rem;">Rank: <strong>739 / 8036</strong></span>
-        <span style="display:inline-block;background:#111;border:1px solid #333;border-radius:6px;padding:.15rem .4rem;margin-right:.25rem;">Roots: <strong>10 / 13</strong></span>
-        <span style="display:inline-block;background:#111;border:1px solid #333;border-radius:6px;padding:.15rem .4rem;">Users: <strong>10 / 13</strong></span>
+        {% if m.writeup_url and m.writeup_url != "" %}
+          <a href="{{ m.writeup_url }}">View</a>
+        {% else %}
+          —
+        {% endif %}
       </td>
+      <td>{{ m.summary }}</td>
+      <td>{{ m.tags }}</td>
     </tr>
-    <tr>
-      <td>Cobblestone</td>
-      <td>Hard</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/cobblestone.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Cobblestone">View</a></td>
-      <td>Web foothold → DB creds → SSH tunnel to XML-RPC service → Arbitrary file leak → Root</td>
-    </tr>
-    <tr>
-      <td>Editor</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/editor.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #a3c9ff;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Editor">View</a></td>
-      <td>nvme compile bug → binary patch → buffer overflow → ROP → reverse shell → proof</td>
-    </tr>
-    <tr>
-    <td>Era</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/era.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #a3c9ff;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Era">View</a></td>
-      <td>Subdomain fuzz → SSRF via download preview → DB leak → web RCE → SUID bash → ASN1 signature bypass → root.txt</td>
-    </tr>
-    <tr>
-    <td>Mirage</td>
-      <td>Hard</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/mirage.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Mirage">View</a></td>
-      <td>GetNPUsers → Kerberos ticket crack → shadow credentials → ESC1 abuse via Certipy → DA hash → root.txt</td>
-    </tr>
-    <tr>
-    <td>Outbound</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/outbound.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Outbound">View</a></td>
-      <td>Web creds reuse → Roundcube RCE → container escape → MySQL plaintext leak → symlink overwrite to /etc/passwd → root</td>
-    </tr>
-    <tr>
-    <td>Voleur</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/voleur.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Voleur">View</a></td>
-      <td>Kerberos TGT → SMB creds → DPAPI masterkey + creds → BloodHound path → SSH via id_rsa → Registry + NTDS.dit → secretsdump → getTGT → Domain Admin</td>
-    </tr>
-    <tr>
-    <td>RustyKey</td>
-      <td>Hard</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/rustykey.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Rustykey">View</a></td>
-      <td>WinRM creds → BloodHound edge → GenericWrite → password reset → ProtectedUsers removal → S4U2Proxy → Domain Admin</td>
-    </tr>    
-    <tr>
-      <td>Artificial</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/artificial.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Artificial">View</a></td>
-      <td>TensorFlow RCE via model → SQLite loot → MD5 crack → RESTIC trick → SUID bash root</td>
-    </tr>
-    <tr>
-      <td>Sorcery</td>
-      <td>Insane</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/sorcery.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Sorcery">View</a></td>
-      <td>Git leak → passkey bypass → Kafka RCE → Docker registry → IPA privesc</td>
-    </tr>
-    <tr>
-      <td>TombWatcher</td>
-      <td>Hard</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/tombwatcher.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Tombwatcher">View</a></td>
-      <td>gMSA abuse → ACL pivot → deleted obj restore → CVE → Domain Admin</td>
-    </tr>
-    <tr>
-      <td>Fluffy</td>
-      <td>Hard</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/fluffy.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Fluffy">View</a></td>
-      <td>NTLMv2 → shadow creds → ADCS ESC1 → Pass-the-Cert → Domain Admin</td>
-    </tr>
-    <tr>
-      <td>Puppy</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/puppy.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Puppy">View</a></td>
-      <td>LDAP → KeePass → password reset → DPAPI secrets → NTDS.dit dump</td>
-    </tr>
-    <tr>
-      <td>Certificate</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/certificate.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Certificate">View</a></td>
-      <td>Cert template abuse → Certipy → Evil-WinRM → Administrator shell</td>
-    </tr>
+  {% endfor %}
   </tbody>
 </table>

@@ -1,3 +1,4 @@
+{% assign items = site.data.active %}
 <table>
   <thead>
     <tr>
@@ -7,56 +8,30 @@
       <th>Proof</th>
       <th>Writeup</th>
       <th>Summary</th>
+      <th>Tags</th>
     </tr>
   </thead>
   <tbody>
+  {% for m in items %}
     <tr>
-      <td>Guardian</td>
-      <td>Hard</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/guardian.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/Guardian">View</a></td>
-      <td>Portal creds → SSH jamil → confs abuse → sudo safeapache2ctl → rootbash → root</td>
+      <td>{{ m.name }}</td>
+      <td>{{ m.difficulty }}</td>
+      <td>{{ m.status }}</td>
+      <td>
+        {% if m.proof_img %}
+          <img src="{{ m.proof_img }}" style="max-width:80px;border-radius:6px;box-shadow:0 0 6px #ff66c4;" />
+        {% endif %}
+      </td>
+      <td>
+        {% if m.writeup_url and m.writeup_url != "" %}
+          <a href="{{ m.writeup_url }}">View</a>
+        {% else %}
+          —
+        {% endif %}
+      </td>
+      <td>{{ m.summary }}</td>
+      <td>{{ m.tags }}</td>
     </tr>
-    <tr>
-      <td>Previous</td>
-      <td>Medium</td>
-      <td>⏳ Active</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/previous.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/Previous">View</a></td>
-      <td>Teaser — modern web/API challenge; careful boundary checks and clean Linux escalation habits. Full write-up unlocks on retirement.</td>
-    </tr>
-    <tr>
-      <td>CodeTwo</td>
-      <td>Easy</td>
-      <td>⏳ Active</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/codeparttwo.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/CodePartTwo">View</a></td>
-      <td>Teaser — modern web app; targeted enum, boundary reading, and Linux privesc mindset. Full write-up unlocks on retirement.</td>
-    </tr>
-    <tr>
-      <td>Planning</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/planning.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/Planning">View</a></td>
-      <td>Subdomain → Grafana RCE → docker escape → SUID privesc</td>
-    </tr>
-    <tr>
-      <td>Nocturnal</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/nocturnal.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/Nocturnal">View</a></td>
-      <td>File leak → admin panel RCE → DB hash → SSH → CVE → root</td>
-    </tr>
-    <tr>
-      <td>Environment</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/environment.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/Environment">View</a></td>
-      <td>Laravel env bypass → avatar RCE → vault → sudo abuse</td>
-    </tr>
+  {% endfor %}
   </tbody>
 </table>
