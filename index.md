@@ -137,6 +137,9 @@ author: Tate Pannam
   <p class="private-note">(Writeups private until box retirement)</p>
   {% include seasonal-table.html %}
 
+  <h2 class="section-title">🏢 HTB Pro Labs</h2>
+  <p class="private-note">(No spoilers—just status & certs)</p>
+  {% include pro-labs.html data="prolabs" %}
   <footer>
     <p>Proofs stored in <code>/HTB/proofs/</code> | Maintained by <a href="https://github.com/inkedqt">inksec</a></p>
   </footer>

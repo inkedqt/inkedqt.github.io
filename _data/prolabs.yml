@@ -1,0 +1,6 @@
+- name: FullHouse
+  tier: Mini Pro Lab
+  status: Completed
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/fullhouse_cert.png
+  url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/ProLabs/FullHouse
+  blurb: Source review → web → AD → reversing → AI/chain — fun glue lab.
