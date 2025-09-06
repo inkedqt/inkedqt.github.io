@@ -1,3 +1,15 @@
+- name: WhiteRabbit
+  difficulty: Insane
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/whiterabbit.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/WhiteRabbit
+  summary: Subdomain/service breadcrumbing → signed-webhook foothold → automation assist → backup workflow pivot → time-seeded randomness insight → final
+- name: DarkCorp
+  difficulty: Insane
+  status: "⏳ Active"
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/darkcorp.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/DarkCorp
+  summary: Teaser only — enterprise-style chain with careful web recon, internal pivoting, and identity-centric steps (no spoilers).
 - name: Guardian
   difficulty: Hard
   status: ✅ Done
