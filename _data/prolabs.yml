@@ -4,3 +4,9 @@
   proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/fullhouse_cert.png
   url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/ProLabs/FullHouse
   blurb: Source review → web → AD → reversing → AI/chain — fun glue lab.
+- name: Solar
+  tier: Mini Pro Lab
+  status: Completed
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/solar_cert.png
+  url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/ProLabs/Solar
+  blurb: Enumeration → situational awareness → FreeBSD exploitation → out-of-band data exfiltration → source code review — tight, chain-heavy lab.
