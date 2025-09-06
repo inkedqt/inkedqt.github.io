@@ -1,3 +1,4 @@
+{% assign retired = site.data.retired | default: [] %}
 <table>
   <thead>
     <tr>
@@ -11,281 +12,30 @@
     </tr>
   </thead>
   <tbody>
+  {% for m in retired %}
     <tr>
-      <td>Lock</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/lock.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Lock">View</a></td>
-      <td>Gitea CI/CD abuse → ASPX webshell → RDP creds via mRemoteNG config → PDF24 CVE‑2023‑49147 oplock → SYSTEM shell → Root flag</td>
-    </tr>
-    <tr>
-      <td>Code</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/code.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Code">View</a></td>
-      <td>SQLi → MD5 crack → path traversal → SSH → root</td>
-    </tr>
-    <tr>
-      <td>Sauna</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/sauna.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Sauna">View</a></td>
-      <td>ASREPRoast → WinRM → winPEAS → autologon creds → DCSync via BloodHound → psexec w/ Admin hash → root.txt</td>
-    </tr>
-    <tr>
-      <td>Kryptos Support</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/kryptos_support.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Challenges/Kryptos_Support">View</a></td>
-      <td>OAuth token leak → IDOR → XSS → JWT tamper → GPG decrypt → flag</td>
-      <td>🧠 CBBH</td>
-    </tr>
-    <tr>
-      <td>Unicode</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/unicode.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Unicode">View</a></td>
-      <td>JWT forgery → Host-split Unicode LFI → SSH as `code` → Python bin reverse via `pyinstxtractor` → root.txt</td>
-      <td>🧠 CBBH</td>
-    </tr>
-    <tr>
-      <td>Sau</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/sau.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Sau">View</a></td>
-      <td>SSRF (CVE-2023-27163) → Maltrail unauth RCE → Shell as `puma` → `sudo systemctl` → root.txt</td>
-      <td>🧠 CBBH</td>
-    </tr>
-    <tr>
-      <td>Support</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/support.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Support">View</a></td>
-      <td>Kerberoast → AS-REP → impersonate S4U2Self → Rubeus abuse → Administrator shell</td>
-      <td>🛡️</td>
-    </tr>
-    <tr>
-      <td>VulnEscape</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/vulnescape.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Vulnescape">View</a></td>
-      <td>RDP login (KioskUser0:blank) → Edge `file://` escape → CMD rename bypass → RD+ creds → BulletPassView → `runas` → root.txt</td>
-      <td>🛡️</td>
-    </tr>
-    <tr>
-      <td>Reset</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/reset.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Reset">View</a></td>
-      <td>Password reset bypass → log poisoning RCE → rlogin + tmux hijack → sudo nano escape → root.txt</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Ten</td>
-      <td>Hard</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/ten.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Ten">View</a></td>
-      <td>Web host creation → FTP traversal via DB edit → SSH key planting → Apache log pipe → root</td>
-      <td>🛡️</td>
-    </tr>
-    <tr>
-      <td>Data</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/data.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Data">View</a></td>
-      <td>Grafana LFI → DB dump → SHA-256 password crack → Docker escape → root</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Dog</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/dog.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Dog">View</a></td>
-      <td>Git repo dump → CMS RCE → PHP utility privilege escalation</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Cat</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/cat.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Cat">View</a></td>
-      <td>Git repo leak → Stored XSS cookie theft → SQLite SQLi → Apache logs → Gitea XSS for privesc</td>
-      <td>🛡️</td>
-    </tr>
-    <tr>
-      <td>Titanic</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/titanic.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Titanic">View</a></td>
-      <td>LFI → SQLite → Gitea → ImageMagick identify RCE → root</td>
-      <td>🛡️</td>
-    </tr>
-    <tr>
-      <td>Administrator</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/administrator.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Administrator">View</a></td>
-      <td>AD domain takeover → Kerberoast → DCSync → Admin hash</td>
-      <td>🧠 🛡️ 🎯</td>
-    </tr>
-    <tr>
-      <td>Beep</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/beep.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Beep">View</a></td>
-      <td>vtigerCRM LFI → legacy creds reuse → root via SSH</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Trick</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/trick.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Trick">View</a></td>
-      <td>DNS & SQLi → email RCE → fail2ban privesc</td>
-      <td>🧠 🛡️</td>
-    </tr>
-    <tr>
-      <td>Waldo</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/waldo.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Waldo">View</a></td>
-      <td>LFI → SSH key → restricted shell escape → cap_dac_read</td>
-      <td>🛡️</td>
-    </tr>
-    <tr>
-      <td>Retro</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/retro.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Retro">View</a></td>
-      <td>Certipy ESC1 abuse → machine account cert → auth + hashdump</td>
-      <td>🛡️</td>
-    </tr>
-    <tr>
-      <td>Down</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/down.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Down">View</a></td>
-      <td>LFI → command injection → pswm decrypt → sudo full root</td>
-      <td>🛡️</td>
-    </tr>
-    <tr>
-      <td>Lame</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/lame.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Lame">View</a></td>
-      <td>Samba usermap exploit → SYSTEM shell</td>
-      <td>🛡️ 🎯</td>
-    </tr>
-    <tr>
-      <td>Blue</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/blue.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Blue">View</a></td>
-      <td>EternalBlue MS17-010 → SYSTEM shell</td>
-      <td>🛡️ 🎯</td>
-    </tr>
-    <tr>
-      <td>Optimum</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/optimum.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/optimum">View</a></td>
-      <td>Rejetto HFS RCE → SYSTEM with local tools</td>
-      <td>🛡️ 🎯</td>
-    </tr>
-    <tr>
-      <td>Bashed</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/bashed.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Bashed">View</a></td>
-      <td>Web fuzzing → PHP webshell → privesc via script abuse</td>
-      <td>🛡️ 🎯</td>
-    </tr>
-    <tr>
-      <td>Chemistry</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/chemistry.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Chemistry">View</a></td>
-      <td>File parser RCE → LFI → SSH key reuse</td>
-      <td>🛡️</td>
-    </tr>
-    <tr>
-      <td>Headless</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/headless.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Headless">View</a></td>
-      <td>Blind XSS → cookie theft → command injection → root</td>
-      <td>🧠 🛡️</td>
-    </tr>
-    <tr>
-      <td>Alert</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/alert.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Alert">View</a></td>
-      <td>Markdown XSS → LFI → group permission privesc</td>
-      <td>🧠 🛡️</td>
-    </tr>
-    <tr>
-      <td>Writeup</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/writeup.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Writeup">View</a></td>
-      <td>CMS Made Simple SQLi → creds for jkr → PATH hijack via fake run-parts → root user injection → root.txt</td>
-      <td>🛡️</td>
-    </tr>
-    <tr>
-      <td>Bastion</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/bastion.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Retired/Bastion">View</a></td>
-      <td>SMB VHD → extract SAM+SYSTEM → crack creds → SSH as l4mpje → mRemoteNG config decrypt → Admin creds → root.txt</td>
-      <td>🎯</td>
-    </tr>
-    <tr>
-      <td>Starting Point (Tier 0–2)</td>
-      <td>Varied</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/startingpoint.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
+      <td>{{ m.name | default: m.machine }}</td>
+      <td>{{ m.difficulty }}</td>
+      <td>{{ m.status | default: "✅ Done" }}</td>
       <td>
-        <a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/StartingPoint/Tier0">Tier 0</a> |
-        <a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/StartingPoint/Tier1">Tier 1</a> |
-        <a href="https://github.com/inkedqt/ctf-writeups/tree/main/HTB/StartingPoint/Tier2">Tier 2</a>
+        {% if m.proof %}
+          <img src="{{ m.proof }}" style="max-width:80px; border-radius:6px; box-shadow:0 0 6px #ff66c4;" />
+        {% endif %}
       </td>
-      <td>Fundamental HTB boxes covering web, SMB, SSH, JWT, privesc, and enumeration techniques — perfect for new pentesters</td>
-      <td>🎯</td>
+      <td>
+        {% if m.writeup %}
+          <a href="{{ m.writeup }}">View</a>
+        {% endif %}
+      </td>
+      <td>{{ m.summary }}</td>
+      <td>{{ m.tags }}</td>
     </tr>
-    <!-- Remaining rows will be filled with appropriate tag columns based on previous mappings -->
+  {% endfor %}
   </tbody>
 </table>
-  <h2 class="text-xl font-bold mt-8 mb-4">🧪 Proving Grounds (PG) Boxes</h2>
+
+<h2 class="text-xl font-bold mt-8 mb-4">🧪 Proving Grounds (PG) Boxes</h2>
+{% assign pg = site.data.pg | default: [] %}
 <table class="w-full text-left table-auto border-collapse mb-6">
   <thead>
     <tr class="bg-pink-600 text-white">
@@ -298,48 +48,32 @@
     </tr>
   </thead>
   <tbody class="bg-black text-white">
+  {% for b in pg %}
     <tr>
-      <td class="p-2">Twiggy</td>
-      <td class="p-2">Easy</td>
-      <td class="p-2">✅ Done</td>
+      <td class="p-2">{{ b.name | default: b.box }}</td>
+      <td class="p-2">{{ b.difficulty }}</td>
+      <td class="p-2">{{ b.status | default: "✅ Done" }}</td>
       <td class="p-2">
-        <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/pg_twiggy.png" class="w-20 rounded-xl shadow-md" />
+        {% if b.proof %}
+          <img src="{{ b.proof }}" class="w-20 rounded-xl shadow-md" />
+        {% endif %}
       </td>
       <td class="p-2">
-        <a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/PG/Twiggy" class="text-pink-400 underline">View</a>
+        {% if b.writeup %}
+          <a href="{{ b.writeup }}" class="text-pink-400 underline">View</a>
+        {% endif %}
       </td>
-      <td class="p-2">SaltStack CVE-2020-11652 RCE → Root Shell</td>
+      <td class="p-2">{{ b.notes | default: b.summary }}</td>
     </tr>
-    <tr>
-      <td class="p-2">ClamAV</td>
-      <td class="p-2">Easy</td>
-      <td class="p-2">✅ Done</td>
-      <td class="p-2">
-        <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/pg_clamav.png" class="w-20 rounded-xl shadow-md" />
-      </td>
-      <td class="p-2">
-        <a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/PG/ClamAV" class="text-pink-400 underline">View</a>
-      </td>
-      <td class="p-2">SNMP leaks clamav-milter → CVE-2007-4560 Sendmail RCE → inetd shell → Root</td>
-    </tr>
-    <tr>
-      <td class="p-2">Mice</td>
-      <td class="p-2">Easy</td>
-      <td class="p-2">✅ Done</td>
-      <td class="p-2">
-        <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/pg_mice_root.png" class="w-20 rounded-xl shadow-md" />
-      </td>
-      <td class="p-2">
-        <a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/PG/Mice" class="text-pink-400 underline">View</a>
-      </td>
-      <td class="p-2">RemoteMouse 3.008 RCE → FileZilla creds → GUI LPE to SYSTEM</td>
-    </tr>
+  {% endfor %}
   </tbody>
 </table>
-  <h2 class="text-xl font-bold mt-8 mb-4">🧪 Try Hack Me (THM) Boxes</h2>
+
+<h2 class="text-xl font-bold mt-8 mb-4">🧪 Try Hack Me (THM) Boxes</h2>
+{% assign thm = site.data.thm | default: [] %}
 <table class="w-full text-left table-auto border-collapse mb-6">
   <thead>
-      <tr class="bg-pink-600 text-white">
+    <tr class="bg-pink-600 text-white">
       <th class="p-2">Box</th>
       <th class="p-2">Difficulty</th>
       <th class="p-2">Status</th>
@@ -349,70 +83,23 @@
     </tr>
   </thead>
   <tbody class="bg-black text-white">
+  {% for t in thm %}
     <tr>
-      <td>FusionCorp</td>
-      <td>Hard</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/thm_fusioncorp.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/THM/FusionCorp">View</a></td>
-      <td>/backup leak → AS-REP roast (lparker) → crack → LDAP desc creds (jmurphy) → Evil-WinRM → SeBackupPrivilege (Backup Operators) → Diskshadow VSS → NTDS dump → Administrator hash → wmiexec → root</td>
+      <td class="p-2">{{ t.name | default: t.box }}</td>
+      <td class="p-2">{{ t.difficulty }}</td>
+      <td class="p-2">{{ t.status | default: "✅ Done" }}</td>
+      <td class="p-2">
+        {% if t.proof %}
+          <img src="{{ t.proof }}" class="w-20 rounded-xl shadow-md" />
+        {% endif %}
+      </td>
+      <td class="p-2">
+        {% if t.writeup %}
+          <a href="{{ t.writeup }}" class="text-pink-400 underline">View</a>
+        {% endif %}
+      </td>
+      <td class="p-2">{{ t.notes | default: t.summary }}</td>
     </tr>
-    <tr>
-      <td>Ledger</td>
-      <td>Hard</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/thm_ledger.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/THM/Ledger">View</a></td>
-      <td>LDAP creds in description → Password spray (CHANGEME2023!) → RDP foothold → ADCS ESC1 abuse via Certipy → Pivot to BRADLEY_ORTIZ → PsExec → DA shell</td>
-    </tr>
-    <tr>
-      <td>Services</td>
-      <td>Medium</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/thm_services.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/THM/Services">View</a></td>
-      <td>User enum from website → Kerbrute → AS-REP roast (j.rock) → WinRM → Server Operators service abuse → SYSTEM</td>
-    </tr>
-    <tr>
-      <td>LazyAdmin</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/thm_lazyadmin.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/THM/LazyAdmin">View</a></td>
-      <td>/SweetRice <code>/content/inc</code> backup leak → MD5 crack (manager) → <code>/content/as</code> admin → PHP upload → webshell → sudo perl <code>backup.pl</code> → overwrite <code>/etc/copy.sh</code> → root</td>
-    </tr>
-    <tr>
-      <td>ArchAngel</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/thm_archangel.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/THM/ArchAngel">View</a></td>
-      <td>/LFI on <code>/test.php?view=</code> → Apache log poisoning via <code>User-Agent</code> → RCE (www-data) → cron overwrite <code>/opt/helloworld.sh</code> → SUID PATH hijack (<code>~/secret/backup</code> calls <code>cp</code>) → root</td>
-    </tr>
-    <tr>
-      <td>Attacktive Directory</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/attacktivedirectory.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/THM/AttacktiveDirectory">View</a></td>
-      <td>Kerbrute userenum → AS-REP roast → SMB loot → backup creds → RDP → secretsdump → psexec → root.txt</td>
-    </tr>
-    <tr>
-      <td>VulnNet: Roasted</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/thm_roasted.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/THM/VulnNet-Roasted">View</a></td>
-      <td>SMB enum → AS-REP roast → user shell via WinRM → SYSVOL creds → DA hash dump → root.txt</td>
-    </tr>
-    <tr>
-      <td>Corp</td>
-      <td>Easy</td>
-      <td>✅ Done</td>
-      <td><img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/thm_corp.png" style="max-width: 80px; border-radius: 6px; box-shadow: 0 0 6px #ff66c4;" /></td>
-      <td><a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/THM/Corp">View</a></td>
-      <td>AppLocker bypass → Kerberoast → crack hash → find creds in unattended.xml → psexec as Administrator</td>
-    </tr>
-
+  {% endfor %}
   </tbody>
-</table>    
+</table>
