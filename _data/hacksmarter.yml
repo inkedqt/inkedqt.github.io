@@ -4,5 +4,5 @@
   status: ✅ Done
   proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/buildingmagic.png
   writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/Other/HackSmarter/BuildingMagic
-  blurb: AS-REP/Kerberoast → foothold → BloodHound path → DA
+  notes: AS-REP/Kerberoast → foothold → BloodHound path → DA
   tags: [AD]   # optional
