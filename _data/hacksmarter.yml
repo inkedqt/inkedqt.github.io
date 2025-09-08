@@ -1,0 +1,8 @@
+# /_data/hacksmarter.yml
+- name: BuildingMagic
+  difficulty: Medium
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/proofs/buildingmagic.png
+  writeup_url: https://courses.hacksmarter.org/courses/8c4fe505-a724-407f-a425-8e17503d4380/take/building-magic-medium
+  blurb: AS-REP/Kerberoast → foothold → BloodHound path → DA
+  tags: [AD]   # optional

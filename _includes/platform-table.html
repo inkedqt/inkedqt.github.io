@@ -1,47 +1,54 @@
-{% assign items = include.items %}
-{% assign title = include.title %}
+<section class="platform-block">
+  <h2>{{ include.title }}</h2>
 
-<h2 class="text-xl font-bold mt-8 mb-4">{{ title }}</h2>
-<table class="w-full text-left table-auto border-collapse mb-6">
-  <thead>
-    <tr class="bg-pink-600 text-white">
-      <th class="p-2">Box</th>
-      <th class="p-2">Difficulty</th>
-      <th class="p-2">Status</th>
-      <th class="p-2">Proof</th>
-      <th class="p-2">Writeup</th>
-      <th class="p-2">Notes</th>
-    </tr>
-  </thead>
-  <tbody class="bg-black text-white">
-    {% for m in items %}
-      {% assign name = m.name | default: m.box | default: m.machine %}
-      {% assign diff = m.difficulty %}
-      {% assign status = m.status | default: "✅ Done" %}
-      {% assign proof_src = m.proof | default: m.proof_img | default: m.proof_url | default: m.image %}
-      {% assign wu = m.writeup_html | default: m.writeup | default: m.link | default: m.url | default: m.writeup_url %}
-      <tr>
-        <td class="p-2">{{ name }}</td>
-        <td class="p-2">{{ diff }}</td>
-        <td class="p-2">{{ status }}</td>
-        <td class="p-2">
-          {% if proof_src %}
-            <img src="{{ proof_src }}" class="w-20 rounded-xl shadow-md" />
+  {% assign rows = include.items %}
+  {%- if include.filter == "done" -%}
+    {% assign rows = rows | where: "status", "✅ Done" | concat: (include.items | where: "status", "Done") %}
+  {%- endif -%}
+
+  <div class="platform-grid">
+    {% for item in rows %}
+      {% assign url   = item.writeup_url | default: item.url %}
+      {% assign img   = item.proof_img   | default: item.image %}
+      {% assign name  = item.name %}
+      {% assign diff  = item.difficulty %}
+      {% assign stat  = item.status %}
+      {% assign blurb = item.blurb %}
+      {% assign tags  = item.tags %}
+
+      <article class="platform-card">
+        {% if img %}
+          <a href="{{ url }}" target="_blank" rel="noopener">
+            <img src="{{ img }}" alt="{{ name }} proof" loading="lazy">
+          </a>
+        {% endif %}
+
+        <div class="body">
+          <h3><a href="{{ url }}" target="_blank" rel="noopener">{{ name }}</a></h3>
+          <p class="meta">
+            {% if diff %}<strong>Difficulty:</strong> {{ diff }} · {% endif %}
+            {% if stat %}<strong>Status:</strong> {{ stat }}{% endif %}
+          </p>
+          {% if blurb %}<p class="blurb">{{ blurb }}</p>{% endif %}
+
+          {% if tags and tags.size > 0 %}
+            <p class="tags">
+              {% for t in tags %}<span class="tag">#{{ t }}</span>{% endfor %}
+            </p>
           {% endif %}
-        </td>
-        <td class="p-2">
-          {% if wu %}
-            {% if wu contains '<a ' %}
-              {{ wu }}
-            {% else %}
-              <a href="{{ wu }}" class="text-pink-400 underline">View</a>
-            {% endif %}
-          {% endif %}
-        </td>
-        <td class="p-2">{{ m.notes | default: m.summary }}</td>
-      </tr>
+        </div>
+      </article>
     {% endfor %}
-  </tbody>
-</table>
+  </div>
+</section>
 
-{% include table-tally.html items=items title=title %}
+<style>
+.platform-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.platform-card{border:1px solid #333;border-radius:14px;overflow:hidden;background:#0b0b0f}
+.platform-card img{display:block;width:100%;height:160px;object-fit:cover}
+.platform-card .body{padding:12px}
+.platform-card h3{margin:.25rem 0 .5rem}
+.platform-card .meta{opacity:.8;font-size:.9rem;margin:.25rem 0}
+.platform-card .blurb{margin:.25rem 0 .5rem}
+.platform-card .tag{display:inline-block;margin-right:6px;padding:2px 8px;border:1px solid #444;border-radius:999px;font-size:.8rem}
+</style>

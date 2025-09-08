@@ -143,6 +143,8 @@ author: Tate Pannam
 
   <h2 class="section-title">🧪 Other Platforms</h2>
   {% include other-platforms.html %}
+  {% include platform-table.html title="🧪 HackSmarter Labs" items=site.data.hacksmarter %}
+
   <footer>
     <p>Proofs stored in <code>/HTB/proofs/</code> | Maintained by <a href="https://github.com/inkedqt">inksec</a></p>
   </footer>
