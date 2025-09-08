@@ -1,3 +1,9 @@
+- name: Soulmate
+  difficulty: Easy
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/soulmate.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Active/Soulmate
+  summary: Subdomain discovery → CrushFTP CVE-2025-31161 → admin access → PHP webshell → SSH creds → Erlang shell → root
 - name: WhiteRabbit
   difficulty: Insane
   status: ✅ Done
