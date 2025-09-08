@@ -55,11 +55,11 @@ author: Tate Pannam
       </a>
     </p>
   </div>
-  <!-- CBBH Card -->
+  <!-- CWES Card -->
   <div class="cert-card">
-    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cbbh.png"
+    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cwes.png"
         alt="Hack The Box CBBH Certification Badge" class="cert-img" />
-    <h3>CBBH – Certified Bug Bounty Hunter</h3>
+    <h3>CWES - Certified Web Exploitation Specialist</h3>
     <p>
       Credential ID:
       <span style="background:#1a1a1a; padding:2px 6px; border-radius:4px;">HTBCERT-8965886BBB</span>
