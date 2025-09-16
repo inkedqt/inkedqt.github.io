@@ -9,7 +9,7 @@
 - name: ShareThePain
   difficulty: Medium
   status: ✅ Done
-  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/proofs/sharethepain.png
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/sharethepain.png
   writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/Other/HackSmarter/ShareThePain
   notes: MSSQL exec → SYSTEM (potato) → copy root.txt; optional ligolo-ng pivot
   tags: [AD, MSSQL]
