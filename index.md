@@ -75,6 +75,17 @@ author: Tate Pannam
       </a>
     </p>
   </div>
+  <!-- BSCP Card -->
+  <div class="cert-card">
+    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/bscp.png"
+        alt="PortSwigger BSCP – Burp Suite Certified Practitioner" class="cert-img" />
+    <h3>BSCP – Burp Suite Certified Practitioner</h3>
+    <p>
+      <a href="https://portswigger.net/web-security/e/c/3dcdb1592a81aeed" target="_blank" rel="noopener">
+        Issued by PortSwigger | Verified Credential
+      </a>
+    </p>
+  </div>
     <!-- Cert IV Cyber Security -->
     <div class="cert-card">
       <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/vu-cyber.png" alt="Victoria University Cyber Security" class="cert-img" />
