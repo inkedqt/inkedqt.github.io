@@ -1,3 +1,10 @@
+
+- name: HackNet
+  difficulty: Hard
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/hacknet.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Machines/HackNet
+  summary: "SSTI + IDOR foothold → world-writable Django cache → pickle RCE → GPG-encrypted DB backup → root."
 - name: Soulmate
   difficulty: Easy
   status: ✅ Done
