@@ -1,3 +1,9 @@
+- name: Expressway
+  difficulty: Easy
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/expressway.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Expressway
+  summary: "IKE Aggressive Mode PSK crack → SSH as ike → sudo -h offramp.expressway.htb → root."
 - name: HTB Season 8 – Depths
   difficulty: Season
   status: 🏆 Platinum
