@@ -45,7 +45,7 @@
   status: Completed
   proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/rastalabs_cert.png
   url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/ProLabs/RastaLabs
-  blurb: Classic AD: password spray → AS-REP/Kerberoast → BloodHound path → DCSync.
+  blurb: "Classic AD: password spray → AS-REP/Kerberoast → BloodHound path → DCSync."
 - name: Wanderer
   tier: Pro Lab
   status: Completed
