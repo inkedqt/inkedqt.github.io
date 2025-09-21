@@ -154,7 +154,7 @@ author: Tate Pannam
   <h2 class="section-title">🏢 HTB Pro Labs</h2>
   <p class="private-note">(No spoilers—just status & certs)</p>
   {% include pro-labs.html data="prolabs" %}
-  
+
   <h2 class="section-title">✅ Retired HTB Machines</h2>
   {% include retired-table.html %}
 
@@ -169,6 +169,21 @@ author: Tate Pannam
   <h2 class="section-title">🧪 Other Platforms</h2>
   {% include other-platforms.html %}
 
+<h2 class="section-title">🔍 Case Studies</h2>
+<div class="cert-grid">
+  <!-- VPN & PrivEsc (generic) -->
+  <div class="cert-card">
+    <img src="{{ '/assets/social/vpn-sudo-case-study-og.png' | relative_url }}"
+         alt="VPN & PrivEsc Case Study" class="cert-img" />
+    <h3>Case Study — VPN & PrivEsc</h3>
+    <p>External VPN weakness (Aggressive Mode PSK) → sudo host option → root. Impact & remediation focused.</p>
+    <p>
+      <a href="{{ '/Case-Studies/VPN-PrivEsc/' | relative_url }}" target="_blank" rel="noopener">
+        Read the Case Study
+      </a>
+    </p>
+  </div>
+</div>
   <footer>
     <p>Proofs stored in <code>/HTB/proofs/</code> | Maintained by <a href="https://github.com/inkedqt">inksec</a></p>
   </footer>
