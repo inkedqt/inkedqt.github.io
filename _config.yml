@@ -2,3 +2,10 @@ theme: minima
 markdown: kramdown
 plugins:
   - jekyll-include-cache
+
+# Auto-apply the dark layout to all pages in Case-Studies/*
+defaults:
+  - scope:
+      path: "Case-Studies"   # recursive: applies to all subfolders
+    values:
+      layout: dark
