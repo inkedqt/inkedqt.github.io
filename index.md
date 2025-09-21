@@ -170,20 +170,19 @@ author: Tate Pannam
   {% include other-platforms.html %}
 
 <h2 class="section-title">🔍 Case Studies</h2>
+<h2 class="section-title">🔍 Case Studies</h2>
 <div class="cert-grid">
-  <!-- VPN & PrivEsc (generic) -->
   <div class="cert-card">
-    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/assets/social/vpn-sudo-case-study-og.png"
+    <img src="{{ '/assets/social/vpn-sudo-case-study-og.png?v=1' | relative_url }}"
          alt="VPN & PrivEsc Case Study" class="cert-img" />
     <h3>Case Study — VPN & PrivEsc</h3>
     <p>External VPN weakness (Aggressive Mode PSK) → sudo host option → root. Impact & remediation focused.</p>
-    <p>
-      <a href="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/Case-Studies/VPN-PrivEsc/" target="_blank" rel="noopener">
-        Read the Case Study
-      </a>
-    </p>
+    <p><a href="{{ '/Case-Studies/VPN-PrivEsc/' | relative_url }}" target="_blank" rel="noopener">
+      Read the Case Study
+    </a></p>
   </div>
 </div>
+
   <footer>
     <p>Proofs stored in <code>/HTB/proofs/</code> | Maintained by <a href="https://github.com/inkedqt">inksec</a></p>
   </footer>
