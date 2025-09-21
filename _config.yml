@@ -51,10 +51,16 @@ defaults:
   #     layout: dark
 
 # SEO/social (jekyll-seo-tag reads these)
-logo: /assets/social/site-og.png           # fallback image for social/SEO
-social:
-  name: "inksec"
-  links:
+url: "https://inksec.io"
+logo: /assets/social/site-og.png
+defaults:
+  - scope:
+      path: "Case-Studies"
+    values:
+      layout: dark
+      image: /assets/social/site-og.png
+    name: "inksec"
+    links:
     - https://github.com/inkedqt
     - https://inksec.io
 
