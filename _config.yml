@@ -1,11 +1,69 @@
+# Site basics
+title: "inksec.io"
+description: "CTF writeups, case studies, and security portfolio by Tate Pannam."
+url: "https://inksec.io"     # IMPORTANT for absolute URLs/OG tags
+baseurl: ""                  # keep empty for user/organization site
+lang: en-AU
+timezone: Australia/Melbourne
+
+# Theme
 theme: minima
+
+# Markdown/rendering
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+permalink: pretty
+
+# Plugins (all are allowed on GitHub Pages)
 plugins:
   - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+  # - jekyll-paginate   # enable only if you add a blog
 
-# Auto-apply the dark layout to all pages in Case-Studies/*
+# Cache-bust & global vars
+version: 4  # bump when you change /assets/css/style.css
+
+# Minima header nav (optional)
+# header_pages:
+#   - index.md
+#   - prep.md
+#   - Case-Studies/VPN-PrivEsc/index.md
+
+# Defaults (auto-apply layout/OG to folders)
 defaults:
+  # All pages under Case-Studies/* use the dark layout
   - scope:
-      path: "Case-Studies"   # recursive: applies to all subfolders
+      path: "Case-Studies"
     values:
       layout: dark
+      image: /assets/social/site-og.png  # fallback OG if a page doesn't set one
+
+  # (Optional) Any top-level pages get dark too
+  # - scope:
+  #     path: ""
+  #   values:
+  #     layout: dark
+
+# SEO/social (jekyll-seo-tag reads these)
+logo: /assets/social/site-og.png           # fallback image for social/SEO
+social:
+  name: "inksec"
+  links:
+    - https://github.com/inkedqt
+    - https://inksec.io
+
+# Exclusions (keeps build clean)
+exclude:
+  - README.md
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - scripts/
