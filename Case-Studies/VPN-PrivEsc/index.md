@@ -2,7 +2,7 @@
 title: "VPN & Privilege Escalation — Case Study"
 description: "External VPN weakness (IKE Aggressive Mode PSK) → host privilege escalation via sudo host option. Includes impact and remediation."
 image: /assets/social/vpn-sudo-case-study-og.png
-layout: post
+layout: dark
 ---
 
 # VPN & Privilege Escalation — Case Study
