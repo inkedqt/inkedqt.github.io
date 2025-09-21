@@ -26,7 +26,7 @@ a:hover {
 
 /* === CONTAINERS === */
 .container {
-  max-width: 1200px;
+  max-width: min(1400px, 95vw) !important;
   margin: 0 auto;
   padding: 2rem 1rem;
   display: flex;
@@ -191,14 +191,15 @@ footer {
 }
 
 /* === CERTIFICATIONS GRID === */
+/* make the cert grid responsive, not fixed at 4 */
 .cert-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+  gap: 1.5rem;
   justify-items: center;
   margin: 2rem auto;
   width: 100%;
-  max-width: 1400px; /* or 1400px, or remove entirely to let it span full width */
+  max-width: none !important; /* remove the old 960px cap */
 }
 
 
