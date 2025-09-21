@@ -1,3 +1,9 @@
+- name: Offshore
+  tier: Pro Lab
+  status: Completed
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assests/certs/offshore_cert.png
+  url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/ProLabs/Offshore
+  blurb: "Perimeter recon → chained web footholds → pivots across segmented networks → AD enumeration/abuse → domain takeover."
 - name: FullHouse
   tier: Mini Pro Lab
   status: Completed
