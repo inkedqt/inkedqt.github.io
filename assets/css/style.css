@@ -227,3 +227,69 @@ footer {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
 }
+/* === DARK CASE STUDY READABILITY OVERRIDES === */
+
+/* Typography & spacing */
+p, li { line-height: 1.7; }
+hr { border: 0; border-top: 1px solid #333; margin: 1.25rem 0; }
+
+/* Blockquotes */
+blockquote {
+  background: #1a1a1a;
+  border-left: 4px solid #ff66c4;
+  color: #f4c4eb;
+  padding: .75rem 1rem;
+  margin: 1rem 0;
+}
+
+/* Inline code & kbd */
+code, kbd, samp {
+  background: #1e1e1e;
+  color: #fbe7ff;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 0 .25rem;
+}
+
+/* Code blocks (Rouge/Minima) */
+pre, .highlight, .highlighter-rouge {
+  background: #151515 !important;
+  color: #f8e9ff !important;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: .85rem 1rem;
+  overflow: auto;
+}
+pre code { background: transparent; border: 0; padding: 0; }
+
+/* Rouge token colors (dark theme) */
+.highlight .c    { color:#b08fb9; font-style: italic; } /* comments */
+.highlight .k    { color:#ff66c4; }                    /* keywords */
+.highlight .o    { color:#ff9ce4; }                    /* operators */
+.highlight .s,
+.highlight .s1,
+.highlight .s2   { color:#ffd479; }                    /* strings */
+.highlight .m    { color:#9ecbff; }                    /* numbers */
+.highlight .na,
+.highlight .nb,
+.highlight .bp   { color:#c0e6ff; }                    /* names/builtins */
+.highlight .nf,
+.highlight .nt   { color:#9effa1; }                    /* functions/tags */
+.highlight .err  { color:#ff7b72; background:#2a000e; }/* errors */
+
+/* Tables in reports */
+.markdown-body table,
+article table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #1a1a1a;
+  color: #f4c4eb;
+}
+article th, article td,
+.markdown-body th, .markdown-body td {
+  border: 1px solid #333;
+  padding: .6rem .75rem;
+}
+
+/* Optional: widen Minima content wrapper on case-study pages */
+main .wrapper { max-width: 1100px; }
