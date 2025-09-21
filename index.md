@@ -169,20 +169,8 @@ author: Tate Pannam
   <h2 class="section-title">🧪 Other Platforms</h2>
   {% include other-platforms.html %}
 
-<h2 class="section-title">🔍 Case Studies</h2>
-<h2 class="section-title">🔍 Case Studies</h2>
-<div class="cert-grid">
-  <div class="cert-card">
-    <img src="{{ '/assets/social/vpn-sudo-case-study-og.png?v=1' | relative_url }}"
-         alt="VPN & PrivEsc Case Study" class="cert-img" />
-    <h3>Case Study — VPN & PrivEsc</h3>
-    <p>External VPN weakness (Aggressive Mode PSK) → sudo host option → root. Impact & remediation focused.</p>
-    <p><a href="{{ '/Case-Studies/VPN-PrivEsc/' | relative_url }}" target="_blank" rel="noopener">
-      Read the Case Study
-    </a></p>
-  </div>
-</div>
-
+  <h2 class="section-title">🔍 Case Studies</h2>
+  {% include case-studies.html %}
   <footer>
     <p>Proofs stored in <code>/HTB/proofs/</code> | Maintained by <a href="https://github.com/inkedqt">inksec</a></p>
   </footer>
