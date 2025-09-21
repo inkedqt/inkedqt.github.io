@@ -86,6 +86,20 @@ author: Tate Pannam
       </a>
     </p>
   </div>
+  <!-- HTB Jr. Cyber Security Analyst (Training Path) -->
+  <div class="cert-card">
+    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cjca.png"
+        alt="HTB Certified Junior Cybersecurity Associate – Training Path" class="cert-img" />
+    <h3>HTB Certified Junior Cybersecurity Associate — Training Path</h3>
+    <p>
+      <span style="background:#1a1a1a; padding:2px 6px; border-radius:4px;">
+        Training Path Completed
+      </span>
+    </p>
+    <p style="opacity:.85; margin-top:6px;">
+      Exam (CJCA) not attempted — already hold CPTS.
+    </p>
+  </div>
     <!-- Cert IV Cyber Security -->
     <div class="cert-card">
       <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/vu-cyber.png" alt="Victoria University Cyber Security" class="cert-img" />
