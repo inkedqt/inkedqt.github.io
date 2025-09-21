@@ -151,6 +151,10 @@ author: Tate Pannam
     My Home Lab setup pfSense segmentation → Security Onion AIO (Zeek/Suricata) + Splunk → AD DC + 2×Win10 → Kali attack box → SPAN mirror (em4)
   </a>
 </p>
+  <h2 class="section-title">🏢 HTB Pro Labs</h2>
+  <p class="private-note">(No spoilers—just status & certs)</p>
+  {% include pro-labs.html data="prolabs" %}
+  
   <h2 class="section-title">✅ Retired HTB Machines</h2>
   {% include retired-table.html %}
 
@@ -161,10 +165,6 @@ author: Tate Pannam
   <h2 class="section-title">🗓️ Seasonal HTB Boxes</h2>
   <p class="private-note">(Writeups private until box retirement)</p>
   {% include seasonal-table.html %}
-
-  <h2 class="section-title">🏢 HTB Pro Labs</h2>
-  <p class="private-note">(No spoilers—just status & certs)</p>
-  {% include pro-labs.html data="prolabs" %}
 
   <h2 class="section-title">🧪 Other Platforms</h2>
   {% include other-platforms.html %}
