@@ -191,15 +191,16 @@ footer {
 }
 
 /* === CERTIFICATIONS GRID === */
-.cert-grid {
+.cert-grid{
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Updated to four columns */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   justify-items: center;
-  margin: 2rem 0;
-  max-width: 960px;
+  margin: 2rem auto;
   width: 100%;
+  max-width: 1400px; /* or 1400px, or remove entirely to let it span full width */
 }
+
 
 .cert-card {
   background-color: #1a1a1a;
