@@ -6,7 +6,7 @@ keywords: CTF, Hack The Box, CPTS, Cybersecurity, Penetration Testing, OSCP, CBB
 author: Tate Pannam
 ---
 
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="{{ '/assets/css/style.css?v=3' | relative_url }}">
 <div class="container">
  <div class="portfolio">
   <h1 class="highlight">🛡️ Cyber Security Portfolio</h1>
