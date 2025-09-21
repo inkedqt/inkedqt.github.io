@@ -173,12 +173,12 @@ author: Tate Pannam
 <div class="cert-grid">
   <!-- VPN & PrivEsc (generic) -->
   <div class="cert-card">
-    <img src="{{ '/assets/social/vpn-sudo-case-study-og.png' | relative_url }}"
+    <img src="https://github.com/inkedqt/ctf-writeups/tree/main/assets/social/vpn-sudo-case-study-og.png"
          alt="VPN & PrivEsc Case Study" class="cert-img" />
     <h3>Case Study — VPN & PrivEsc</h3>
     <p>External VPN weakness (Aggressive Mode PSK) → sudo host option → root. Impact & remediation focused.</p>
     <p>
-      <a href="{{ '/Case-Studies/VPN-PrivEsc/' | relative_url }}" target="_blank" rel="noopener">
+      <a href="https://github.com/inkedqt/ctf-writeups/tree/main/Case-Studies/VPN-PrivEsc/" target="_blank" rel="noopener">
         Read the Case Study
       </a>
     </p>
