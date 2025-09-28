@@ -1,3 +1,9 @@
+- name: Imagery
+  difficulty: Medium
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/imagery.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Imagery
+  summary: "Image transform RCE → shell as web user → decrypt readable backup to recover creds → sudo /usr/local/bin/charcol scheduling abuse → root."
 - name: Expressway
   difficulty: Easy
   status: ✅ Done
