@@ -1,3 +1,9 @@
+- name: Zephyr
+  tier: Pro Lab
+  status: Completed
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/zephyr_cert.png
+  url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/ProLabs/Zephyr
+  blurb: "Perimeter foothold → multi-segment pivots → internal tooling abuse → AD enumeration → domain takeover."
 - name: Offshore
   tier: Pro Lab
   status: Completed
