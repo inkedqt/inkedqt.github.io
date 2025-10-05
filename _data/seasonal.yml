@@ -1,3 +1,9 @@
+- name: DarkZero
+  difficulty: Hard
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/darkzero.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/DarkZero
+  summary: "Split-horizon DNS + linked MSSQL servers → xp_cmdshell foothold → Meterpreter → flaky kernel exploit (CVE-2024-30088) or hash-dump fallback → Rubeus ticket capture (xp_dirtree) + pivots → Domain Admin."
 - name: Imagery
   difficulty: Medium
   status: ✅ Done
