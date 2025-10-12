@@ -1,3 +1,9 @@
+- name: Signed
+  difficulty: Medium
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/signed.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Signed
+  summary: "MSSQL extended-proc enumeration → trigger SMB callback to capture service NTLMv2 → crack service hash → convert hex SIDs & craft Kerberos silver ticket for MSSQL SPN → use forged ticket to gain dbo/sysadmin → xp_cmdshell / OPENROWSET to read flags and pivot to domain."
 - name: DarkZero
   difficulty: Hard
   status: ✅ Done
