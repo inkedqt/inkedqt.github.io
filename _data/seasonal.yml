@@ -1,3 +1,9 @@
+- name: Hercules
+  difficulty: Insane
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/hercules.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Hercules
+  summary: "Identity-first AD / PKI chain: initial foothold → enumerate AD ACLs and certificate templates → abuse delegated rights to enable/reset accounts and modify OU ACLs → request certificates (on-behalf-of flows) and export PFXs → convert PFX → PEM → PKINIT to get ccaches/TGTs → use tickets or client-cert auth to get WinRM shells → reset service account passwords, harvest machine/service keys and use Impacket (changepasswd/getST) and S4U/S4U2Proxy to impersonate Administrator and own the domain."
 - name: Signed
   difficulty: Medium
   status: ✅ Done
