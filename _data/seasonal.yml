@@ -1,3 +1,9 @@
+- name: Conversor
+  difficulty: Medium-Hard
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/conversor.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Conversor
+  summary: "Web file-transform parser abuse: exploit server-side upload/processing to gain a foothold, recover forgotten local DB/config secrets and reused credentials, then leverage sudo/service misconfigurations for a clean privilege escalation to root."
 - name: Hercules
   difficulty: Insane
   status: ✅ Done
