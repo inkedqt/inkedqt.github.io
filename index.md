@@ -75,6 +75,24 @@ author: Tate Pannam
       </a>
     </p>
   </div>
+  <!-- CDSA Card -->
+  <div class="cert-card">
+    <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/cdsa.png" alt="Hack The Box CDSA Certificate – Tate Pannam" class="cert-img" />
+    <h3>CDSA – Certified Defensive Security Analyst</h3>
+    <p>
+      Credential ID: <span style="background: #1a1a1a; padding: 2px 6px; border-radius: 4px;">HTBCERT-86C4EF4FDA</span>
+    </p>
+    <p>
+      <a href="https://www.credly.com/badges/80ca0800-f89e-4be7-86c1-4e104d776233/public_url" target="_blank">
+        View Verified Badge on Credly
+      </a>
+    </p>
+    <p>
+      <a href="https://www.hackthebox.com/certificates" target="_blank">
+        Verify on Hack The Box
+      </a>
+    </p>
+  </div>
   <!-- BSCP Card -->
   <div class="cert-card">
     <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/certs/bscp.png"
