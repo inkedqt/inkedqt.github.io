@@ -156,19 +156,13 @@ author: Tate Pannam
     </div>
   </div>
   </div>
- <!-- HTB Prep Link -->
-<div class="cert-prep-link" style="margin-top: 20px;">
-  <a href="prep.html" 
-     style="color: #ff66c4; font-weight: bold; text-decoration: none;">
-    🔗 HTB & Cert Prep Tracker
-  </a>
-</div> 
-<p style="text-align: center; font-size: 0.9em; margin-top: 20px; margin-bottom: 0;">
-  📋 
-  <a href="https://github.com/inkedqt/ctf-writeups/tree/main/Other/HomeLab" style="text-decoration: none; color: #ff99ff;">
-    My Home Lab setup pfSense segmentation → Security Onion AIO (Zeek/Suricata) + Splunk → AD DC + 2×Win10 → Kali attack box → SPAN mirror (em4)
-  </a>
-</p>
+  <!-- Hands-On Labs / Projects -->
+  <h2 class="section-title">🧪 Hands-On Labs & Projects</h2>
+  <p class="private-note">
+  Real environments I’ve built and use for ongoing practice – SIEM, detection engineering, and lab architecture.
+  </p>
+  {% include projects-table.html data="projects" %}
+
   <h2 class="section-title">🏢 HTB Pro Labs</h2>
   <p class="private-note">(No spoilers—just status & certs)</p>
   {% include pro-labs.html data="prolabs" %}

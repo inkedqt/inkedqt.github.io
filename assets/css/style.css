@@ -293,3 +293,13 @@ article th, article td,
 
 /* Optional: widen Minima content wrapper on case-study pages */
 main .wrapper { max-width: 1100px; }
+
+.status-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background: #1a1a1a;
+  color: #ff99ff;
+  border: 1px solid #ff66c4;
+}
