@@ -303,3 +303,10 @@ main .wrapper { max-width: 1100px; }
   color: #ff99ff;
   border: 1px solid #ff66c4;
 }
+/* Pink glow for any finished state */
+.status-pill.status-completed,
+.status.completed,
+.status.done,
+.status-pill.status-done {
+  box-shadow: 0 0 6px rgba(255, 102, 196, 0.9);
+}
