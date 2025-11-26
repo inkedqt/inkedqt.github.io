@@ -21,11 +21,15 @@
           </span>
         </td>
         <td>
-          {% if project.proof_img %}
-            <a href="{{ project.proof_img }}" target="_blank" rel="noopener">View</a>
-          {% else %}
+        {% if project.proof_img %}
+            <a href="{{ project.proof_img }}" target="_blank" rel="noopener">
+            <img src="{{ project.proof_img }}"
+                alt="{{ project.name }} proof"
+                style="max-width:80px;border-radius:6px;box-shadow:0 0 6px #ff66c4;">
+            </a>
+        {% else %}
             –
-          {% endif %}
+        {% endif %}
         </td>
         <td>
           {% if project.link %}

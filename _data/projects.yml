@@ -10,7 +10,7 @@
 - name: Home Lab – pfSense + Security Onion + Splunk + AD
   category: Lab Architecture
   status: Completed
-  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/Other/HomeLab/img/topology.png
+  proof_img: https://github.com/inkedqt/ctf-writeups/blob/main/Other/HomeLab/homelab_topology.png
   link: https://github.com/inkedqt/ctf-writeups/tree/main/Other/HomeLab
   skills: Network segmentation, SPAN mirroring, Zeek/Suricata, Splunk dashboards, AD lab
 
