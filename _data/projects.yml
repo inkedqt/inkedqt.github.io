@@ -18,7 +18,7 @@
   category: Systems / Platform
   status: Ongoing
   proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/arch.png
-  link:
+  link: https://github.com/inkedqt/ctf-writeups/tree/main/Other/Arch
   skills: Arch Linux, daily driver, Linux Gaming, virtualization, Linux desktop hardening, VM tooling
 
 - name: Future AD Attack & Detection Lab
