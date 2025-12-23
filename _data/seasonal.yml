@@ -1,3 +1,51 @@
+- name: HTB Season 9 – Season of the Gacha
+  difficulty: Season
+  status: 🏆 Holo
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/htb_season9.png
+  writeup_url: https://labs.hackthebox.com/achievement/season/2216056/9
+  summary: 'Rank: 95 / 9850 Players • Roots: 13 / 13 • Users: 13 / 13 (Top ~1%)'
+- name: Eloquia
+  difficulty: Insane
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/eloquia.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Eloquia
+  summary: "Multi-layer enterprise compromise: web logic flaws → containerised service abuse → trust boundary violations → host-level escalation through operational tooling → persistence via insecure custom services, resulting in complete SYSTEM control."
+- name: MonitorsFour
+  difficulty: Easy
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/monitorsfour.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Monitorsfour
+  summary: "Configuration leak leads to authentication bypass → admin access in a monitoring platform → remote code execution inside a container → abuse of exposed container management interfaces to escape isolation and gain full control of the Windows host."
+- name: Gavel
+  difficulty: Medium
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/gavel.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Gavel
+  summary: "Leaked application source → logic-level SQL injection → credential recovery → administrative feature abuse → arbitrary rule execution → privilege escalation via a misdesigned setuid client communicating with a root-owned daemon."
+- name: Fries
+  difficulty: Hard
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/fries.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Fries
+  summary: "Hybrid Linux/Windows environment compromise: source-code disclosure → container service abuse → credential harvesting via internal tooling → Active Directory escalation using identity misconfiguration and certificate trust abuse to reach domain admin."
+- name: Eighteen
+  difficulty: Easy
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/eighteen.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Eighteen
+  summary: "Valid low-priv access → MSSQL data exposure → application credential recovery → lateral movement via remote management → modern AD abuse to escalate from user to full domain compromise."
+- name: NanoCorp
+  difficulty: Hard
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/nanocorp.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Nanocorp
+  summary: "Corporate Windows AD attack chain: external web service abuse → credential exposure and reuse → AD enumeration with delegated rights → controlled account manipulation → SYSTEM-level escalation through insecure monitoring infrastructure."
+- name: Giveback
+  difficulty: Medium
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/giveback.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Giveback
+  summary: "Web application foothold via third-party plugin abuse → containerised environment enumeration → credential leakage through service configuration → pivot across internal services and escape container boundaries → leverage privileged runtime components to gain root on the host."
 - name: Conversor
   difficulty: Medium-Hard
   status: ✅ Done
@@ -39,7 +87,7 @@
   status: 🏆 Platinum
   proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/htb_season8.png
   writeup_url: https://labs.hackthebox.com/achievement/season/2216056/8
-  summary: 'Rank: 739 / 8036 Roots: 10 / 13 Users: 10 / 13'
+  summary: 'Rank: 739 / 8036 (Top ~9%) • Roots: 10 / 13 • Users: 10 / 13'
 - name: Cobblestone
   difficulty: Hard
   status: ✅ Done
