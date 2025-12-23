@@ -10,7 +10,11 @@ author: Tate Pannam
 <div class="container">
  <div class="portfolio">
   <h1 class="highlight">🛡️ Cyber Security Portfolio</h1>
-<p>Hi, I'm <strong>Tate Pannam</strong>, a cyber security student at Victoria University in Melbourne, Australia. This site documents my Hack The Box journey — including <em>active</em>, <em>seasonal</em>, and <em>retired</em> CTF machines — with a focus on practical skill development through hands-on exploitation and enumeration.</p>
+<p>
+Hi, I'm <strong>Tate Pannam</strong>, a cyber security student at Victoria University in Melbourne, Australia.
+This site documents my hands-on security work across Hack The Box, labs, and certifications, with a focus on
+real-world exploitation, enumeration, and privilege escalation.
+</p>
 <p>While I initially used community writeups to reinforce foundational concepts, many boxes here — including several now-retired ones — were completed independently while still active. If you see points awarded in the proof screenshots, that means the box was solved before it was retired.</p>
 
 
@@ -156,33 +160,42 @@ author: Tate Pannam
     </div>
   </div>
   </div>
-  <!-- Hands-On Labs / Projects -->
-  <h2 class="section-title">🧪 Hands-On Labs & Projects</h2>
-  <p class="private-note">
-  Real environments I’ve built and use for ongoing practice – SIEM, detection engineering, and lab architecture.
-  </p>
-  {% include projects-table.html data="projects" %}
+<!-- 🏆 Seasonal Results -->
+<h2 class="section-title">🏆 Seasonal Results</h2>
+{% include seasonal-results.html %}
 
-  <h2 class="section-title">🏢 HTB Pro Labs</h2>
-  <p class="private-note">(No spoilers—just status & certs)</p>
-  {% include pro-labs.html data="prolabs" %}
+<!-- 🗓️ Seasonal HTB Boxes -->
+<h2 class="section-title">🗓️ Seasonal HTB Boxes</h2>
+{% include seasonal-table.html %}
 
-  <h2 class="section-title">✅ Retired HTB Machines</h2>
-  {% include retired-table.html %}
+<!-- HTB Pro Labs -->
+<h2 class="section-title">🏢 HTB Pro Labs</h2>
+<p class="private-note">(No spoilers—just status & certifications)</p>
+{% include pro-labs.html data="prolabs" %}
 
-  <h2 class="section-title">🔒 Active HTB Machines</h2>
-  <p class="private-note">(Writeups private until box retirement)</p>
-  {% include active-table.html %}
+<!-- Hands-On Labs / Projects -->
+<h2 class="section-title">🧪 Hands-On Labs & Projects</h2>
+<p class="private-note">
+Real environments I’ve built and use for ongoing practice – SIEM, detection engineering, and lab architecture.
+</p>
+{% include projects-table.html data="projects" %}
 
-  <h2 class="section-title">🗓️ Seasonal HTB Boxes</h2>
-  <p class="private-note">(Writeups private until box retirement)</p>
-  {% include seasonal-table.html %}
+<!-- Retired HTB Machines -->
+<h2 class="section-title">✅ Retired HTB Machines</h2>
+{% include retired-table.html %}
 
-  <h2 class="section-title">🧪 Other Platforms</h2>
-  {% include other-platforms.html %}
+<!-- Active HTB Machines -->
+<h2 class="section-title">🔒 Active HTB Machines</h2>
+<p class="private-note">(Writeups private until box retirement)</p>
+{% include active-table.html %}
 
-  <h2 class="section-title">🔍 Case Studies</h2>
-  {% include case-studies.html %}
+<!-- Other Platforms -->
+<h2 class="section-title">🧪 Other Platforms</h2>
+{% include other-platforms.html %}
+
+<!-- Case Studies -->
+<h2 class="section-title">🔍 Case Studies</h2>
+{% include case-studies.html %}
   <footer>
     <p>Proofs stored in <code>/HTB/proofs/</code> | Maintained by <a href="https://github.com/inkedqt">inksec</a></p>
   </footer>
