@@ -204,6 +204,7 @@ Where proof screenshots display points, this indicates the box was solved prior 
 <h2 class="section-title">🗓️ Seasonal HTB Boxes</h2>
 {% include seasonal-table.html %}
 
+{% include socmas-details.html %}
 <!-- HTB Pro Labs -->
 <h2 class="section-title">🏢 HTB Pro Labs</h2>
 <p class="private-note">(No spoilers—just status & certifications)</p>

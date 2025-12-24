@@ -310,3 +310,96 @@ main .wrapper { max-width: 1100px; }
 .status-pill.status-done {
   box-shadow: 0 0 6px rgba(255, 102, 196, 0.9);
 }
+/* === Seasonal expandable (SOC-mas details) === */
+.seasonal-expand{
+  max-width: 960px;
+  width: 100%;
+  margin: -1rem auto 2rem; /* tucks it closer to the table */
+}
+
+.seasonal-details{
+  background: #1a1a1a;
+  border: 1px solid #ff66c4;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255,102,196,.35);
+  overflow: hidden;
+}
+
+.seasonal-summary{
+  list-style: none;
+  cursor: pointer;
+  padding: 0.9rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #f4c4eb;
+}
+
+.seasonal-summary::-webkit-details-marker{ display:none; }
+
+.seasonal-summary-title{
+  font-weight: 700;
+  color: #ff90d6;
+}
+
+.seasonal-summary-hint{
+  font-size: 0.9rem;
+  color: #ffb3ff;
+  border: 1px solid #ff66c4;
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  box-shadow: 0 0 6px rgba(255,102,196,.35);
+}
+
+.seasonal-details[open] .seasonal-summary-hint{
+  opacity: 0.9;
+}
+
+.seasonal-details-body{
+  padding: 0 1rem 1rem;
+  color: #f4c4eb;
+}
+
+.seasonal-details-body p{
+  margin: 0.75rem 0;
+}
+
+.seasonal-details-body ul{
+  margin: 0.5rem 0 0.75rem 1.1rem;
+}
+
+.seasonal-mini-note{
+  font-size: 0.95rem;
+  color: #ffb3ff;
+  margin-top: 0.75rem;
+}
+
+.seasonal-proof-row{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.seasonal-proof-link{
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid #ff66c4;
+  background: #121212;
+  color: #ff9ce4;
+  box-shadow: 0 0 8px rgba(255,102,196,.35);
+}
+
+.seasonal-proof-link:hover{
+  color: #ffb3ff;
+  text-decoration: none;
+}
+
+.seasonal-proof-thumb{
+  max-height: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255,102,196,.35);
+}
