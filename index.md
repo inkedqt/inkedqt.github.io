@@ -200,6 +200,23 @@ Where proof screenshots display points, this indicates the box was solved prior 
 <h2 class="section-title">🏆 Seasonal Results</h2>
 {% include seasonal-results.html %}
 
+### TryHackMe – Advent of Cyber (SOC-mas) 2025
+
+Completed 24 hands-on blue team challenges focused on real-world SOC workflows and defensive security tasks.
+
+**Coverage included**
+- Phishing analysis and investigation
+- Splunk-based log analysis and alert triage
+- SOC alert handling and prioritisation
+- Malware analysis (introductory, hands-on)
+- Web and host-based forensics
+- Registry and system artefact analysis
+- Network discovery and traffic interpretation
+- Command-and-control detection concepts
+- Introductory ICS / Modbus security scenarios
+
+This event reinforced practical blue-team skills and complemented CDSA and SOC-focused learning.
+
 <!-- 🗓️ Seasonal HTB Boxes -->
 <h2 class="section-title">🗓️ Seasonal HTB Boxes</h2>
 {% include seasonal-table.html %}
