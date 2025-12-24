@@ -23,8 +23,8 @@ Hack The Box (Active, Retired & Seasonal) • Exploitation • Privilege Escalat
 <div class="hero">
   <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/tate-banner.png" alt="Tate hacking banner" class="hero-banner" />
   <div class="hero-text">
-<p>## About This Portfolio
-
+<h2>About This Portfolio</h2>
+<p>
 This site documents my hands-on cyber security work across Hack The Box, labs, and certifications, with a focus on real-world exploitation, enumeration, and privilege escalation.
 
 While I initially used community writeups to reinforce foundational concepts, many of the boxes shown here — including several now-retired machines — were completed independently while still active.
@@ -166,6 +166,33 @@ Where proof screenshots display points, this indicates the box was solved prior 
     </div>
   </div>
   </div>
+  <!-- ⭐ Featured Case Study -->
+<h2 class="section-title">⭐ Featured Case Study</h2>
+
+<div class="featured-case-study">
+  <h3>VPN Compromise & Privilege Escalation</h3>
+
+  <p>
+    A structured, assessment-style case study simulating a real-world penetration test,
+    from an internet-exposed VPN through to full host-level privilege escalation.
+  </p>
+
+  <ul>
+    <li>IKE Aggressive Mode enumeration and PSK cracking</li>
+    <li>Valid account abuse for authenticated access</li>
+    <li>Sudo misconfiguration leading to root compromise</li>
+    <li>MITRE ATT&CK mapping, risk ratings, and remediation guidance</li>
+  </ul>
+
+  <p>
+    This case study prioritises <strong>attack methodology, defensive impact, and remediation</strong>
+    over tooling or CTF-specific shortcuts.
+  </p>
+
+  <p>
+    👉 <a href="#case-studies">Read the full case study →</a>
+  </p>
+</div>
 <!-- 🏆 Seasonal Results -->
 <h2 class="section-title">🏆 Seasonal Results</h2>
 {% include seasonal-results.html %}
