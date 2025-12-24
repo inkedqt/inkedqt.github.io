@@ -190,7 +190,10 @@ Where proof screenshots display points, this indicates the box was solved prior 
   </p>
 
   <p>
-    👉 <a href="#case-studies">Read the full case study →</a>
+  <a href="https://inksec.io/Case-Studies/VPN-PrivEsc/">
+  👉 Read the full penetration test case study →
+</a>
+
   </p>
 </div>
 <!-- 🏆 Seasonal Results -->
