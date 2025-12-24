@@ -11,20 +11,26 @@ author: Tate Pannam
  <div class="portfolio">
   <h1 class="highlight">🛡️ Cyber Security Portfolio</h1>
 <p>
-Hi, I'm <strong>Tate Pannam</strong>, a cyber security student at Victoria University in Melbourne, Australia.
-This site documents my hands-on security work across Hack The Box, labs, and certifications, with a focus on
-real-world exploitation, enumeration, and privilege escalation.
+Hi, I’m Tate Pannam 👋
+
+Cyber Security Student • CTF Explorer • Hands-on Practitioner
+
+Hack The Box (Active, Retired & Seasonal) • Exploitation • Privilege Escalation
 </p>
-<p>While I initially used community writeups to reinforce foundational concepts, many boxes here — including several now-retired ones — were completed independently while still active. If you see points awarded in the proof screenshots, that means the box was solved before it was retired.</p>
 
 
 <!-- Hero Banner -->
 <div class="hero">
   <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/tate-banner.png" alt="Tate hacking banner" class="hero-banner" />
   <div class="hero-text">
-    <h1>Hi, I'm <span class="highlighted">Tate Pannam</span> 👋</h1>
-    <p>💻 Cyber security student | CTF enthusiast | Hands-on Learner<br />
-    🧠 Retired/Active/Seasonal HTB boxes | 🛠️ Exploits | 🚩 Root flags | 🔐 PrivEsc</p>
+<p>## About This Portfolio
+
+This site documents my hands-on cyber security work across Hack The Box, labs, and certifications, with a focus on real-world exploitation, enumeration, and privilege escalation.
+
+While I initially used community writeups to reinforce foundational concepts, many of the boxes shown here — including several now-retired machines — were completed independently while still active.
+
+Where proof screenshots display points, this indicates the box was solved prior to retirement.
+</p>
   </div>
  <!-- Certifications -->
   <h2 class="section-title">📜 Certifications</h2>
