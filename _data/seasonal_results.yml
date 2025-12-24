@@ -10,9 +10,4 @@
   proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/htb_season8.png
   writeup_url: https://labs.hackthebox.com/achievement/season/2216056/8
   summary: "Rank: 739 / 8036 (Top ~9.19%) • Users: 10 / 13 • Roots: 10 / 13"
-- name: TryHackMe – Advent of Cyber 2025 (SOC-mas)
-  difficulty: Event
-  status: 🎄 Completed (24 challenges)
-  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/thm_advent2025.png
-  writeup_url: https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-2H6JFCWHKX.pdf # or your certificate/share link if you have one
-  summary: "24 hands-on blue-team challenges • Splunk • Phishing triage • Forensics • Detection • ICS/Modbus"
+
