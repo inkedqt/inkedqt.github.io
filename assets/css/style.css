@@ -314,7 +314,9 @@ main .wrapper { max-width: 1100px; }
 .seasonal-expand{
   max-width: 960px;
   width: 100%;
-  margin: 0.75rem auto 2rem; /* tucks it closer to the table */
+  margin: 0 auto 2rem; /* tucks it closer to the table */
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .seasonal-details{
@@ -323,6 +325,8 @@ main .wrapper { max-width: 1100px; }
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(255,102,196,.35);
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .seasonal-summary{
