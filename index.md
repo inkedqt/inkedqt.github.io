@@ -23,15 +23,25 @@ Hack The Box (Active, Retired & Seasonal) • Exploitation • Privilege Escalat
 <div class="hero">
   <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/tate-banner.png" alt="Tate hacking banner" class="hero-banner" />
   <div class="hero-text">
-<h2>About This Portfolio</h2>
-<p>
-This site documents my hands-on cyber security work across Hack The Box, labs, and certifications, with a focus on real-world exploitation, enumeration, and privilege escalation.
+  <h2>About This Portfolio</h2>
+  <p>
+    This site documents my hands-on cyber security work across Hack The Box, labs, and certifications, with a focus on real-world exploitation, enumeration, and privilege escalation.
 
-While I initially used community writeups to reinforce foundational concepts, many of the boxes shown here — including several now-retired machines — were completed independently while still active.
+    While I initially used community writeups to reinforce foundational concepts, many of the boxes shown here — including several now-retired machines — were completed independently while still active.
 
-Where proof screenshots display points, this indicates the box was solved prior to retirement.
-</p>
+    Where proof screenshots display points, this indicates the box was solved prior to retirement.
+  </p>
+
+  <div class="career-goals">
+    <h3>Career Goals</h3>
+    <p>
+      Actively seeking <strong>entry-level SOC Analyst / Security Operations / Blue Team roles</strong> in Melbourne — where I can apply monitoring, detection, incident response, and defensive skills in a real-world environment.
+    </p>
+    <p>
+      Long-term aspiration: transition into <strong>red team / penetration testing</strong>. Open to junior positions, graduate programs, or internships that offer growth in either direction.
+    </p>
   </div>
+</div>
  <!-- Certifications -->
   <h2 class="section-title">📜 Certifications</h2>
   <div class="cert-grid">
@@ -233,6 +243,39 @@ Real environments I’ve built and use for ongoing practice – SIEM, detection 
 <!-- Case Studies -->
 <h2 class="section-title">🔍 Case Studies</h2>
 {% include case-studies.html %}
+  <!-- Contact Section -->
+<h2 class="section-title">📬 Get In Touch</h2>
+
+<div class="contact-card">
+  <p>
+    Got an opportunity, question, or just want to talk cyber? I reply to every message.
+  </p>
+
+  <form action="https://formspree.io/f/mrebnbrn" method="POST" class="contact-form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="your@email.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="6" placeholder="Hey Tate, I'd love to discuss..." required></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p class="contact-note">
+    Or find me on 
+    <a href="https://www.x.com/inkedqt" target="_blank">X</a> • 
+    GitHub: <a href="https://github.com/inkedqt" target="_blank">@inkedqt</a>
+  </p>
+</div>
   <footer>
     <p>Proofs stored in <code>/HTB/proofs/</code> | Maintained by <a href="https://github.com/inkedqt">inksec</a></p>
   </footer>
