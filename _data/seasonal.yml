@@ -1,3 +1,9 @@
+- name: Facts
+  difficulty: Easy
+  status: ✅ Done
+  proof_img: https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/facts.png
+  writeup_url: https://github.com/inkedqt/ctf-writeups/tree/main/HTB/Seasonal/Facts
+  summary: "Camaleon CMS IDOR vulnerability in user profile management → privilege escalation to administrator role → S3-compatible MinIO credentials exposed in CMS configuration → AWS CLI enumeration of internal buckets → SSH private key extraction from object storage → passphrase cracking with John the Ripper → SSH access as trivia user → sudo permissions on facter utility → arbitrary code execution via custom Ruby facts → root shell."
 - name: HTB Season 9 – Season of the Gacha
   difficulty: Season
   status: 🏆 Holo
