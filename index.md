@@ -196,6 +196,32 @@ SIEM Analysis • Incident Response • Threat Hunting • Defensive Security
     through simulated enterprise environments, documenting my investigations and defensive techniques on YouTube.
   </p>
 
+  <!-- 🏆 Featured Achievement -->
+  <div class="featured-achievement">
+    <div class="achievement-badge">
+      <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/proofs/thm-first-shift.png" alt="TryHackMe First Shift CTF Completion" />
+    </div>
+    <div class="achievement-details">
+      <h3>🎯 Latest Achievement: TryHackMe First Shift CTF</h3>
+      <p><strong>Completed:</strong> February 2026 | <strong>Difficulty:</strong> Medium | <strong>Points:</strong> 2,214</p>
+      <p>
+        Week-long SOC analyst simulation replicating the <strong>first week on a real SOC job</strong>. 
+        Covered alert triage, log analysis, incident response workflows, and threat hunting across 9 realistic scenarios.
+      </p>
+      <ul class="achievement-highlights">
+        <li>Alert prioritization and severity assessment</li>
+        <li>Multi-source log correlation (SIEM, EDR, network logs)</li>
+        <li>Incident response playbook execution</li>
+        <li>Threat intelligence integration and IOC analysis</li>
+        <li>Documentation and reporting for SOC escalation</li>
+      </ul>
+      <p class="achievement-meta">
+        <strong>Why this matters:</strong> Directly demonstrates day-to-day SOC L1 analyst capabilities 
+        in a realistic enterprise environment.
+      </p>
+    </div>
+  </div>
+
   <div class="soc-grid">
     <!-- LetsDefend -->
     <div class="soc-card">

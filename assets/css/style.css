@@ -513,32 +513,148 @@ main .wrapper { max-width: 1100px; }
   color: #ffb3ff;
   font-size: 0.95rem;
 }
-/* SOC Experience Section */
+/* ============================================
+   SOC Experience & Achievement Section
+   ============================================ */
+
 .soc-experience {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  border: 1px solid #e91e63;
+  border: 2px solid #ff66c4; /* matches your pink theme */
   border-radius: 12px;
   padding: 2rem;
   margin: 2rem 0;
+  box-shadow: 0 0 16px rgba(255, 102, 196, 0.3);
 }
 
+/* Featured Achievement Card */
+.featured-achievement {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2d1b4e 100%);
+  border: 2px solid #00ff88;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0 3rem 0;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+  align-items: start;
+  box-shadow: 0 8px 24px rgba(0, 255, 136, 0.15);
+}
+
+.achievement-badge {
+  position: relative;
+}
+
+.achievement-badge img {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #00ff88;
+  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-badge img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 255, 136, 0.5);
+}
+
+.achievement-details h3 {
+  color: #00ff88;
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.achievement-details p {
+  margin: 1rem 0;
+  line-height: 1.7;
+  color: #f4c4eb; /* matches your body text color */
+}
+
+.achievement-details p strong {
+  color: #00ff88;
+}
+
+.achievement-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.achievement-highlights li {
+  padding: 0.75rem;
+  padding-left: 2.5rem;
+  position: relative;
+  background: rgba(0, 255, 136, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid #00ff88;
+  color: #f4c4eb; /* matches your theme */
+  transition: background 0.2s ease;
+}
+
+.achievement-highlights li:hover {
+  background: rgba(0, 255, 136, 0.1);
+}
+
+.achievement-highlights li::before {
+  content: "✓";
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00ff88;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.achievement-meta {
+  background: rgba(0, 255, 136, 0.1);
+  border-left: 4px solid #00ff88;
+  padding: 1rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 4px;
+  font-style: italic;
+  color: #b8e6d5;
+}
+
+.achievement-meta strong {
+  color: #00ff88;
+  font-style: normal;
+}
+
+/* SOC Grid (for YouTube playlists) */
 .soc-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   margin: 2rem 0;
 }
 
 .soc-card {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(233, 30, 99, 0.3);
+  border: 1px solid rgba(255, 102, 196, 0.3); /* pink theme */
   border-radius: 8px;
   padding: 1.5rem;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.soc-card:hover {
+  border-color: rgba(255, 102, 196, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 0 12px rgba(255, 102, 196, 0.4);
 }
 
 .soc-card h3 {
-  color: #e91e63;
+  color: #ff90d6; /* matches your headings */
   margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.soc-card p {
+  margin: 0.75rem 0;
+  line-height: 1.6;
+  color: #f4c4eb;
 }
 
 .soc-card ul {
@@ -548,31 +664,115 @@ main .wrapper { max-width: 1100px; }
 
 .soc-card ul li {
   margin: 0.5rem 0;
-  color: #ccc;
+  color: #f4c4eb;
 }
 
+/* YouTube CTA Section */
 .youtube-cta {
-  background: rgba(233, 30, 99, 0.1);
-  border-left: 4px solid #e91e63;
+  background: rgba(255, 102, 196, 0.1);
+  border-left: 4px solid #ff66c4;
   padding: 1.5rem;
   margin-top: 2rem;
   border-radius: 4px;
 }
 
+.youtube-cta p {
+  margin: 0.75rem 0;
+  line-height: 1.7;
+  color: #f4c4eb;
+}
+
+/* Buttons */
 .btn-primary, .btn-subscribe {
   display: inline-block;
-  background: linear-gradient(135deg, #e91e63, #c2185b);
-  color: white;
+  background: linear-gradient(135deg, #ff66c4, #ff90d6); /* pink gradient */
+  color: #121212 !important; /* dark text for contrast */
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   transition: transform 0.2s, box-shadow 0.2s;
   margin-top: 1rem;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-primary:hover, .btn-subscribe:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.4);
+  box-shadow: 0 4px 12px rgba(255, 102, 196, 0.6);
   text-decoration: none;
+  color: #121212 !important;
+}
+
+.btn-subscribe {
+  background: linear-gradient(135deg, #00ff88, #00cc6f);
+  color: #121212 !important;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+}
+
+.btn-subscribe:hover {
+  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.6);
+}
+
+/* ============================================
+   Mobile Responsive
+   ============================================ */
+
+@media (max-width: 768px) {
+  .featured-achievement {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+  
+  .achievement-badge img {
+    max-width: 100%;
+    margin: 0 auto 1.5rem auto;
+    display: block;
+  }
+
+  .achievement-details h3 {
+    font-size: 1.25rem;
+  }
+
+  .achievement-highlights li {
+    padding-left: 2rem;
+    font-size: 0.95rem;
+  }
+
+  .soc-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .btn-primary, .btn-subscribe {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-achievement {
+    padding: 1rem;
+  }
+
+  .achievement-details h3 {
+    font-size: 1.1rem;
+  }
+
+  .achievement-highlights {
+    gap: 0.5rem;
+  }
+
+  .achievement-highlights li {
+    padding: 0.5rem;
+    padding-left: 1.75rem;
+    font-size: 0.9rem;
+  }
+
+  .achievement-highlights li::before {
+    left: 0.5rem;
+    font-size: 1rem;
+  }
 }
