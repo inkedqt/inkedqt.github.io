@@ -13,9 +13,9 @@ author: Tate Pannam
 <p>
 Hi, I’m Tate Pannam 👋
 
-Cyber Security Student • CTF Explorer • Hands-on Practitioner
+Aspiring SOC Analyst • Blue Team Practitioner • Detection & Response
 
-Hack The Box (Active, Retired & Seasonal) • Exploitation • Privilege Escalation
+SIEM Analysis • Incident Response • Threat Hunting • Defensive Security
 </p>
 
 
@@ -24,23 +24,34 @@ Hack The Box (Active, Retired & Seasonal) • Exploitation • Privilege Escalat
   <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/tate-banner.png" alt="Tate hacking banner" class="hero-banner" />
   <div class="hero-text">
   <h2>About This Portfolio</h2>
+<p>
+  This portfolio demonstrates <strong>defensive security capabilities</strong> through hands-on practice across 
+  multiple domains: <strong>SOC operations</strong> (SIEM analysis, alert triage, incident response), 
+  <strong>threat detection</strong> (understanding attacker TTPs from HTB challenges), and 
+  <strong>security operations</strong> (lab work, tool deployment, defensive architecture).
+</p>
+<p>
+  My approach combines <em>offensive knowledge</em> (how attacks work) with <em>defensive application</em> 
+  (how to detect and prevent them). This blue-team-with-red-team-perspective is documented through 
+  <strong>video walkthroughs</strong> (SOC investigations), <strong>written case studies</strong> 
+  (penetration test reports from a defender's view), and <strong>hands-on lab work</strong>.
+</p>
+
+<div class="career-goals">
+  <h3>🎯 Career Goals</h3>
   <p>
-    This site documents my hands-on cyber security work across Hack The Box, labs, and certifications, with a focus on real-world exploitation, enumeration, and privilege escalation.
-
-    While I initially used community writeups to reinforce foundational concepts, many of the boxes shown here — including several now-retired machines — were completed independently while still active.
-
-    Where proof screenshots display points, this indicates the box was solved prior to retirement.
+    <strong>Primary Goal:</strong> Seeking <strong>SOC Analyst Level 1 / Security Operations / Incident Response</strong> 
+    roles in Melbourne where I can apply monitoring, detection, alert triage, and defensive security skills in a production environment.
   </p>
-
-  <div class="career-goals">
-    <h3>Career Goals</h3>
-    <p>
-      Actively seeking <strong>entry-level SOC Analyst / Security Operations / Blue Team roles</strong> in Melbourne — where I can apply monitoring, detection, incident response, and defensive skills in a real-world environment.
-    </p>
-    <p>
-      Long-term aspiration: transition into <strong>red team / penetration testing</strong>. Open to junior positions, graduate programs, or internships that offer growth in either direction.
-    </p>
-  </div>
+  <p>
+    <strong>Why SOC?</strong> I'm passionate about understanding <em>how attacks work</em> (red team knowledge from HTB) 
+    to better <em>detect and prevent them</em> (blue team application). My offensive security background gives me 
+    attacker perspective that strengthens defensive capabilities.
+  </p>
+  <p style="opacity: 0.85; font-size: 0.95em;">
+    Long-term: Open to transitioning toward penetration testing or purple team roles as experience grows. 
+    Currently focused on building strong defensive foundations first.
+  </p>
 </div>
  <!-- Certifications -->
   <h2 class="section-title">📜 Certifications</h2>
@@ -176,6 +187,69 @@ Hack The Box (Active, Retired & Seasonal) • Exploitation • Privilege Escalat
     </div>
   </div>
   </div>
+  <!-- 🎬 SOC & Detection Experience -->
+<h2 class="section-title">🎬 SOC Analysis & Detection Engineering</h2>
+
+<div class="soc-experience">
+  <p>
+    Beyond offensive security skills, I actively practice <strong>real-world SOC analyst workflows</strong> 
+    through simulated enterprise environments, documenting my investigations and defensive techniques on YouTube.
+  </p>
+
+  <div class="soc-grid">
+    <!-- LetsDefend -->
+    <div class="soc-card">
+      <h3>🚨 LetsDefend SOC Investigations</h3>
+      <p><strong>Focus:</strong> Real-world SIEM alert triage, log analysis, and incident response workflows</p>
+      <p><strong>Tools:</strong> Splunk, SIEM platforms, threat intelligence, endpoint detection</p>
+      <p><strong>Skills Demonstrated:</strong></p>
+      <ul>
+        <li>Alert triage and severity assessment</li>
+        <li>Log correlation across multiple sources</li>
+        <li>Malware analysis and IOC identification</li>
+        <li>Incident documentation and reporting</li>
+      </ul>
+      <p>
+        <a href="https://www.youtube.com/playlist?list=PL4gQknB3vSQ4gVy09mt2oMwl0hjL5aCor" target="_blank" class="btn-primary">
+          📺 Watch SOC Investigations Playlist
+        </a>
+      </p>
+    </div>
+
+    <!-- TryHackMe -->
+    <div class="soc-card">
+      <h3>🛡️ TryHackMe Blue Team Operations</h3>
+      <p><strong>Focus:</strong> SOC Level 1 learning path and defensive security fundamentals</p>
+      <p><strong>Topics:</strong> Network security monitoring, PCAP analysis, threat hunting, security operations</p>
+      <p><strong>Skills Demonstrated:</strong></p>
+      <ul>
+        <li>Network traffic analysis (Wireshark, tcpdump)</li>
+        <li>Security event monitoring and correlation</li>
+        <li>Threat actor TTP identification</li>
+        <li>Defensive tool deployment and configuration</li>
+      </ul>
+      <p>
+        <a href="https://www.youtube.com/playlist?list=PL4gQknB3vSQ5G7likpYieGzLbhVcCO4hN" target="_blank" class="btn-primary">
+          📺 Watch Blue Team Walkthroughs
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="youtube-cta">
+    <p>
+      <strong>Why Video Documentation?</strong> 
+      These investigations demonstrate <em>communication skills</em> (critical for SOC reporting), 
+      <em>analytical thinking</em> (how I approach alerts from triage to resolution), 
+      and <em>tool proficiency</em> in enterprise security platforms.
+    </p>
+    <p style="text-align: center; margin-top: 1.5rem;">
+      <a href="https://www.youtube.com/@inksec" target="_blank" class="btn-subscribe">
+        🔔 Subscribe to My YouTube Channel
+      </a>
+    </p>
+  </div>
+</div>
   <!-- ⭐ Featured Case Study -->
 <h2 class="section-title">⭐ Featured Case Study</h2>
 

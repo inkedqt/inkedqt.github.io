@@ -513,3 +513,66 @@ main .wrapper { max-width: 1100px; }
   color: #ffb3ff;
   font-size: 0.95rem;
 }
+/* SOC Experience Section */
+.soc-experience {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 1px solid #e91e63;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.soc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.soc-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(233, 30, 99, 0.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.soc-card h3 {
+  color: #e91e63;
+  margin-top: 0;
+}
+
+.soc-card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.soc-card ul li {
+  margin: 0.5rem 0;
+  color: #ccc;
+}
+
+.youtube-cta {
+  background: rgba(233, 30, 99, 0.1);
+  border-left: 4px solid #e91e63;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 4px;
+}
+
+.btn-primary, .btn-subscribe {
+  display: inline-block;
+  background: linear-gradient(135deg, #e91e63, #c2185b);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 1rem;
+}
+
+.btn-primary:hover, .btn-subscribe:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.4);
+  text-decoration: none;
+}
