@@ -199,13 +199,13 @@ SIEM Analysis • Incident Response • Threat Hunting • Defensive Security
   <!-- 🏆 Featured Achievement -->
   <div class="featured-achievement">
     <div class="achievement-badge">
-      <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/assets/proofs/thm-first-shift.png" alt="TryHackMe First Shift CTF Completion" />
+      <img src="https://raw.githubusercontent.com/inkedqt/ctf-writeups/main/HTB/proofs/THM_first_shift.png" alt="TryHackMe First Shift CTF Completion" />
     </div>
     <div class="achievement-details">
       <h3>🎯 Latest Achievement: TryHackMe First Shift CTF</h3>
       <p><strong>Completed:</strong> February 2026 | <strong>Difficulty:</strong> Medium | <strong>Points:</strong> 2,214</p>
       <p>
-        Week-long SOC analyst simulation replicating the <strong>first week on a real SOC job</strong>. 
+        Week-long SOC analyst simulation replicating the <strong>first day on a real SOC job</strong>. 
         Covered alert triage, log analysis, incident response workflows, and threat hunting across 9 realistic scenarios.
       </p>
       <ul class="achievement-highlights">
